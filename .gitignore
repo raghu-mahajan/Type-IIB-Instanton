@@ -1,0 +1,16 @@
+.DS_Store
+
+# LaTeX intermediate files
+Notes/*.aux
+Notes/*.bbl
+Notes/*.blg
+Notes/*.fdb_latexmk
+Notes/*.fls
+Notes/*.log
+Notes/*.out
+Notes/*.toc
+Notes/*.xml
+Notes/build/
+
+# Render-verification intermediates
+tmp/
