@@ -1,4 +1,5 @@
 from pathlib import Path
+import hashlib
 import re
 
 
@@ -7,16 +8,18 @@ REPOSITORY_DIR = NOTES_DIR.parent
 SOURCE_HTML = NOTES_DIR / "build" / "type_iib_worldsheet_conventions.html"
 OUTPUT_DIR = REPOSITORY_DIR / "docs"
 OUTPUT_HTML = OUTPUT_DIR / "index.html"
+SITE_CSS = OUTPUT_DIR / "assets" / "site.css"
 
 
 html = SOURCE_HTML.read_text(encoding="utf-8")
+site_css_version = hashlib.sha256(SITE_CSS.read_bytes()).hexdigest()[:12]
 
 html = html.replace(
     '<link rel="stylesheet" href="LaTeXML.css" type="text/css">\n'
     '<link rel="stylesheet" href="ltx-article.css" type="text/css">',
     '<link rel="stylesheet" href="assets/LaTeXML.css" type="text/css">\n'
     '<link rel="stylesheet" href="assets/ltx-article.css" type="text/css">\n'
-    '<link rel="stylesheet" href="assets/site.css" type="text/css">',
+    f'<link rel="stylesheet" href="assets/site.css?v={site_css_version}" type="text/css">',
 )
 
 html = html.replace(
