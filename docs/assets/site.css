@@ -241,8 +241,35 @@ a {
   width: 100%;
 }
 
+.ltx_equationgroup.ltx_eqn_table {
+  display: table;
+  overflow: visible;
+}
+
+.ltx_equationgroup.ltx_eqn_table > tbody {
+  display: table-row-group;
+  width: auto;
+}
+
 .ltx_tabular {
   margin: 20px auto;
+  border-collapse: collapse;
+  font-family: var(--serif);
+}
+
+.ltx_tabular td,
+.ltx_tabular th {
+  padding: 6px 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ltx_tabular .ltx_border_tt {
+  border-top: 2px solid var(--ink);
+}
+
+.ltx_tabular .ltx_border_bb {
+  border-bottom: 2px solid var(--ink);
 }
 
 .ltx_tag_equation {
@@ -317,6 +344,10 @@ a {
 
   .ltx_eqn_table {
     font-size: 0.92em;
+  }
+
+  .ltx_equationgroup.ltx_eqn_table {
+    font-size: 0.74em;
   }
 }
 

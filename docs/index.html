@@ -2,12 +2,12 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>Worldsheet Conventions for Type IIB String Theory</title>
-<!--Generated on Mon Aug 31 15:06:22 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Generated on Mon Aug 31 15:24:38 2026 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
 <!--Document created on August 31, 2026.-->
 
 <link rel="stylesheet" href="assets/LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="assets/ltx-article.css" type="text/css">
-<link rel="stylesheet" href="assets/site.css?v=235d6aeb170f" type="text/css">
+<link rel="stylesheet" href="assets/site.css?v=570ed3c9316f" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Worldsheet conventions for flat ten-dimensional Type IIB string theory, including free fields, ghosts, spin fields, BRST, and picture changing.">
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -46,21 +46,6 @@
   <a href="type_iib_worldsheet_conventions.tex">Download the TeX source</a>
 </div>
 
-<div class="ltx_abstract">
-<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
-    
-<p class="ltx_p">These notes fix the holomorphic worldsheet conventions used below for flat
-ten-dimensional type IIB string theory. The normalization of the free
-fields, the ghost systems, the BRST current, and the picture-changing
-operator follows Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="Instanton-Induced Closed-String Amplitudes in Minimal Superstring Theory at Subleading Order" class="ltx_ref">2</a>]</cite>. In particular, the
-picture-changing operator is twice the normalization often used in the
-literature. The ten-dimensional gamma-matrix orientation and the
-normalization of the Ramond spin-field operator products follow
-Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="Euclidean D-branes in Type IIB string theory on Calabi-Yau threefolds" class="ltx_ref">1</a>]</cite>. Every displayed holomorphic formula has an
-anti-holomorphic counterpart obtained by placing a tilde on each field and
-replacing <math id="m1" class="ltx_Math" alttext="z,w" display="inline"><mrow><mi>z</mi><mo>,</mo><mi>w</mi></mrow></math> by <math id="m2" class="ltx_Math" alttext="\bar{z},\bar{w}" display="inline"><mrow><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo>,</mo><mover accent="true"><mi>w</mi><mo>¯</mo></mover></mrow></math>.</p>
-  
-</div>
 <nav class="ltx_TOC ltx_list_toc ltx_toc_toc"><h6 class="ltx_title ltx_title_contents">Contents</h6>
 <ol class="ltx_toclist">
 <li class="ltx_tocentry ltx_tocentry_section">
@@ -113,19 +98,24 @@ We use the ten-dimensional Minkowski metric</p>
 <math id="S1.p2.m3" class="ltx_Math" alttext="A(z)B(w)\sim C(z,w)" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∼</mo><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> means that, in the expansion valid for <math id="S1.p2.m4" class="ltx_Math" alttext="|z|&gt;|w|" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>z</mi><mo stretchy="false">|</mo></mrow><mo>&gt;</mo><mrow><mo stretchy="false">|</mo><mi>w</mi><mo stretchy="false">|</mo></mrow></mrow></math>,
 <math id="S1.p2.m5" class="ltx_Math" alttext="C(z,w)" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math> contains precisely the terms that are singular as <math id="S1.p2.m6" class="ltx_Math" alttext="z\to w" display="inline"><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></math>. Write
 <math id="S1.p2.m7" class="ltx_Math" alttext="\operatorname{Sing}_{z\to w}[A(z)B(w)]" display="inline"><mrow><msub><mi>Sing</mi><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></math> for the sum of those singular terms.
-Normal ordering is defined by point splitting:</p>
+Every coincident-point product in these notes is understood to be normal
+ordered by point splitting. Thus the notation <math id="S1.p2.m8" class="ltx_Math" alttext="A(w)B(w)" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math> means</p>
 <table id="S1.E3" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E3.m1" class="ltx_math_unparsed" alttext=":\!AB\!:(w):=\lim_{z\to w}\left(A(z)B(w)-\operatorname{Sing}_{z\to w}[A(z)B(w)%
-]\right)." display="block"><mrow><mo rspace="0.108em">:</mo><mi>A</mi><mi>B</mi><mo lspace="0.108em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo>:=</mo><munder><mo lspace="0.111em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></munder><mrow><mo>(</mo><mi>A</mi><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mi>B</mi><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>−</mo><msub><mi>Sing</mi><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></msub><mrow><mo stretchy="false">[</mo><mi>A</mi><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mi>B</mi><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow><mo>)</mo></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E3.m1" class="ltx_Math" alttext="A(w)B(w):=\lim_{z\to w}\left(A(z)B(w)-\operatorname{Sing}_{z\to w}[A(z)B(w)]%
+\right)." display="block"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><munder><mo lspace="0.111em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></munder><mrow><mo>(</mo><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>Sing</mi><mrow><mi>z</mi><mo stretchy="false">→</mo><mi>w</mi></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">[</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.3)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">If <math id="S1.p2.m8" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is a stress tensor, a holomorphic operator <math id="S1.p2.m9" class="ltx_Math" alttext="\mathcal{O}_{h}" display="inline"><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>h</mi></msub></math> has conformal
-weight <math id="S1.p2.m10" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> when</p>
+<p class="ltx_p">Normal-ordering colons are suppressed everywhere below.
+When a composite field is defined by an equation whose left-hand side is
+<math id="S1.p2.m9" class="ltx_Math" alttext="C(z)" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>, every field on the right-hand side is evaluated at <math id="S1.p2.m10" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> unless a
+different argument is displayed explicitly.
+If <math id="S1.p2.m11" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is a stress tensor, a holomorphic operator <math id="S1.p2.m12" class="ltx_Math" alttext="\mathcal{O}_{h}" display="inline"><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>h</mi></msub></math> has conformal
+weight <math id="S1.p2.m13" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> when</p>
 <table id="S1.E4" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
@@ -136,12 +126,12 @@ weight <math id="S1.p2.m10" class="ltx_Math" alttext="h" display="inline"><mi>h<
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.4)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The central charge <math id="S1.p2.m11" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math> of <math id="S1.p2.m12" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is defined so that the coefficient of
-<math id="S1.p2.m13" class="ltx_Math" alttext="(z-w)^{-4}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>4</mn></mrow></msup></math> in <math id="S1.p2.m14" class="ltx_Math" alttext="T(z)T(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math> is <math id="S1.p2.m15" class="ltx_Math" alttext="c/2" display="inline"><mrow><mi>c</mi><mo>/</mo><mn>2</mn></mrow></math>. A field of Grassmann parity
-<math id="S1.p2.m16" class="ltx_Math" alttext="|A|\in\{0,1\}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow></math> is called even when <math id="S1.p2.m17" class="ltx_Math" alttext="|A|=0" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>0</mn></mrow></math> and odd when <math id="S1.p2.m18" class="ltx_Math" alttext="|A|=1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>; away from
+<p class="ltx_p">The central charge <math id="S1.p2.m14" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math> of <math id="S1.p2.m15" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is defined so that the coefficient of
+<math id="S1.p2.m16" class="ltx_Math" alttext="(z-w)^{-4}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>4</mn></mrow></msup></math> in <math id="S1.p2.m17" class="ltx_Math" alttext="T(z)T(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math> is <math id="S1.p2.m18" class="ltx_Math" alttext="c/2" display="inline"><mrow><mi>c</mi><mo>/</mo><mn>2</mn></mrow></math>. A field of Grassmann parity
+<math id="S1.p2.m19" class="ltx_Math" alttext="|A|\in\{0,1\}" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow></math> is called even when <math id="S1.p2.m20" class="ltx_Math" alttext="|A|=0" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>0</mn></mrow></math> and odd when <math id="S1.p2.m21" class="ltx_Math" alttext="|A|=1" display="inline"><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow></math>; away from
 operator-product singularities, two such fields obey
-<math id="S1.p2.m19" class="ltx_Math" alttext="AB=(-1)^{|A||B|}BA" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></msup><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></math>. Derivatives without a bar mean
-<math id="S1.p2.m20" class="ltx_Math" alttext="\partial:=\partial/\partial z" display="inline"><mrow><mo>∂</mo><mo>:=</mo><mrow><mo lspace="0.111em" rspace="0em">∂</mo><mo>/</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>z</mi></mrow></mrow></mrow></math>.</p>
+<math id="S1.p2.m22" class="ltx_Math" alttext="AB=(-1)^{|A||B|}BA" display="inline"><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></msup><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>A</mi></mrow></mrow></math>. Derivatives without a bar mean
+<math id="S1.p2.m23" class="ltx_Math" alttext="\partial:=\partial/\partial z" display="inline"><mrow><mo>∂</mo><mo>:=</mo><mrow><mo lspace="0.111em" rspace="0em">∂</mo><mo>/</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>z</mi></mrow></mrow></mrow></math>.</p>
 </div>
 <section id="S1.SS1" class="ltx_subsection">
 <h3 class="ltx_title ltx_title_subsection">
@@ -174,7 +164,7 @@ is defined by</p>
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E7.m1" class="ltx_Math" alttext="T_{X}(z):=-\eta_{MN}:\!\partial X^{M}\partial X^{N}\!:(z)." display="block"><mrow><mrow><mrow><mrow><msub><mi>T</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>−</mo><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub></mrow></mrow><mo lspace="0.278em" rspace="0.0539em">:</mo><mrow><mo lspace="0.0539em" rspace="0em">∂</mo><mrow><msup><mi>X</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><msup><mi>X</mi><mi>N</mi></msup></mrow></mrow></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E7.m1" class="ltx_Math" alttext="T_{X}(z):=-\eta_{MN}\partial X^{M}\partial X^{N}(z)." display="block"><mrow><mrow><mrow><msub><mi>T</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mo>−</mo><mrow><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>X</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>X</mi><mi>N</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.7)</span></td>
 </tr></tbody>
@@ -213,8 +203,7 @@ conformal weight one, and the ten-boson central charge is</p>
 <tbody id="S1.E11"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E11.m1" class="ltx_Math" alttext="\displaystyle V_{k}(z,\bar{z})" display="inline"><mrow><msub><mi>V</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E11.m2" class="ltx_math_unparsed" alttext="\displaystyle:=:\!\exp\!\bigl{(}\mathrm{i}k\mathbin{\cdot}X(z,\bar{z})\bigr{)}%
-\!:." display="inline"><mrow><mo rspace="0em">:=</mo><mo rspace="0.108em">:</mo><mpadded width="1.370em"><mi>exp</mi></mpadded><mrow><mo maxsize="120%" minsize="120%">(</mo><mi mathvariant="normal">i</mi><mi>k</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>X</mi><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mo maxsize="120%" minsize="120%" rspace="0.108em">)</mo></mrow><mo rspace="0em">:</mo><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E11.m2" class="ltx_Math" alttext="\displaystyle:=\exp\!\bigl{(}\mathrm{i}k\mathbin{\cdot}X(z,\bar{z})\bigr{)}." display="inline"><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mpadded width="1.370em"><mi>exp</mi></mpadded><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>k</mi></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>X</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.11)</span></td>
 </tr></tbody>
@@ -242,8 +231,8 @@ conformal weight one, and the ten-boson central charge is</p>
 <tbody id="S1.E14"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E14.m1" class="ltx_Math" alttext="\displaystyle V_{k}(z,\bar{z})V_{p}(w,\bar{w})" display="inline"><mrow><msub><mi>V</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>V</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mover accent="true"><mi>w</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E14.m2" class="ltx_Math" alttext="\displaystyle\sim|z-w|^{k\cdot p}:\!\exp\!\bigl{(}\mathrm{i}(k+p)\mathbin{%
-\cdot}X(w,\bar{w})\bigr{)}\!:," display="inline"><mrow><mrow><mrow><mi></mi><mo>∼</mo><msup><mrow><mo stretchy="false">|</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo rspace="0.278em" stretchy="false">|</mo></mrow><mrow><mi>k</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>p</mi></mrow></msup></mrow><mo rspace="0.108em">:</mo><mrow><mpadded width="1.370em"><mi>exp</mi></mpadded><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mi>p</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>X</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mover accent="true"><mi>w</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.108em">)</mo></mrow></mrow><mo rspace="0.278em">:</mo><mi></mi></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E14.m2" class="ltx_Math" alttext="\displaystyle\sim|z-w|^{k\cdot p}\exp\!\bigl{(}\mathrm{i}(k+p)\mathbin{\cdot}X%
+(w,\bar{w})\bigr{)}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><msup><mrow><mo stretchy="false">|</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">|</mo></mrow><mrow><mi>k</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>p</mi></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mpadded width="1.370em"><mi>exp</mi></mpadded><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mrow><mi mathvariant="normal">i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mi>p</mi></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.222em">⋅</mo><mi>X</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo>,</mo><mover accent="true"><mi>w</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.14)</span></td>
 </tr></tbody>
@@ -273,7 +262,7 @@ normalization is</p>
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E16.m1" class="ltx_Math" alttext="T_{\psi}(z):=\eta_{MN}:\!\psi^{M}\partial\psi^{N}\!:(z)." display="block"><mrow><mrow><mrow><mrow><msub><mi>T</mi><mi>ψ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><msup><mi>ψ</mi><mi>N</mi></msup></mrow></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E16.m1" class="ltx_Math" alttext="T_{\psi}(z):=\eta_{MN}\psi^{M}\partial\psi^{N}(z)." display="block"><mrow><mrow><mrow><msub><mi>T</mi><mi>ψ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub><mo>⁢</mo><msup><mi>ψ</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>ψ</mi><mi>N</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.16)</span></td>
 </tr></tbody>
@@ -302,14 +291,14 @@ central charge is</p>
 <tbody id="S1.E19"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E19.m1" class="ltx_Math" alttext="\displaystyle T_{F}" display="inline"><msub><mi>T</mi><mi>F</mi></msub></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E19.m2" class="ltx_Math" alttext="\displaystyle:=-\eta_{MN}:\!\psi^{M}\partial X^{N}\!:." display="inline"><mrow><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo>−</mo><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub></mrow></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><msup><mi>X</mi><mi>N</mi></msup></mrow></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mi></mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E19.m2" class="ltx_Math" alttext="\displaystyle:=-\eta_{MN}\psi^{M}\partial X^{N}." display="inline"><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo>−</mo><mrow><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub><mo>⁢</mo><msup><mi>ψ</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><msup><mi>X</mi><mi>N</mi></msup></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.19)</span></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">The minus sign in Eq. (<a href="#S1.E19" title="In 1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.19</span></a>) is fixed jointly by
 Eqs. (<a href="#S1.E6" title="In 1.1 Conventions for the free boson ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.6</span></a>) and (<a href="#S1.E15" title="In 1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.15</span></a>). It ensures that the
-picture-changing operator defined in Eq. (<a href="#S1.E66" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.66</span></a>) maps the
+picture-changing operator defined in Eq. (<a href="#S1.E65" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.65</span></a>) maps the
 <math id="S1.SS2.p1.m5" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math>-picture factor <math id="S1.SS2.p1.m6" class="ltx_Math" alttext="e^{-\phi}\psi^{M}" display="inline"><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>ϕ</mi></mrow></msup><mo>⁢</mo><msup><mi>ψ</mi><mi>M</mi></msup></mrow></math> to <math id="S1.SS2.p1.m7" class="ltx_Math" alttext="\partial X^{M}" display="inline"><mrow><mo rspace="0em">∂</mo><msup><mi>X</mi><mi>M</mi></msup></mrow></math> with positive
 coefficient. The superconformal operator products of <math id="S1.SS2.p1.m8" class="ltx_Math" alttext="T_{\mathrm{m}}" display="inline"><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub></math> and <math id="S1.SS2.p1.m9" class="ltx_Math" alttext="T_{F}" display="inline"><msub><mi>T</mi><mi>F</mi></msub></math> are
 derived in Sec. <a href="#S1.SS5" title="1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5</span></a>.</p>
@@ -453,25 +442,44 @@ place where the type IIB chirality choice enters.</p>
 
 <div id="S1.SS3.p1" class="ltx_para ltx_noindent">
 <p class="ltx_p">The reparametrization ghosts <math id="S1.SS3.p1.m1" class="ltx_Math" alttext="b(z)" display="inline"><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="S1.SS3.p1.m2" class="ltx_Math" alttext="c(z)" display="inline"><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> are Grassmann odd. Their
-holomorphic conformal weights, ghost numbers, and singular operator product
-are</p>
+holomorphic conformal weights and ghost numbers are</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">field</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS3.p1.m3" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt">ghost number</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS3.p1.m4" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS3.p1.m5" class="ltx_Math" alttext="2" display="inline"><mn>2</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS3.p1.m6" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS3.p1.m7" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS3.p1.m8" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS3.p1.m9" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">Their singular operator product is</p>
 <table id="S1.E30" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E30.m1" class="ltx_Math" alttext="\begin{array}[]{c|cc}\text{field}&amp;h&amp;\text{ghost number}\\
-\hline\cr b&amp;2&amp;-1\\
-c&amp;-1&amp;+1\end{array}\qquad b(z)c(w)\sim\frac{1}{z-w}." display="block"><mrow><mrow><mrow><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mtext>field</mtext></mtd><mtd><mi>h</mi></mtd><mtd><mtext>ghost number</mtext></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mi>b</mi></mtd><mtd><mn>2</mn></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd class="ltx_border_r"><mi>c</mi></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>+</mo><mn>1</mn></mrow></mtd></mtr></mtable><mspace width="2.167em"></mspace><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∼</mo><mfrac><mn>1</mn><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E30.m1" class="ltx_Math" alttext="b(z)c(w)\sim\frac{1}{z-w}." display="block"><mrow><mrow><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∼</mo><mfrac><mn>1</mn><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.30)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The <math id="S1.SS3.p1.m3" class="ltx_Math" alttext="bc" display="inline"><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></math> stress tensor is defined by</p>
+<p class="ltx_p">The <math id="S1.SS3.p1.m10" class="ltx_Math" alttext="bc" display="inline"><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></math> stress tensor is defined by</p>
 <table id="S1.E31" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E31.m1" class="ltx_math_unparsed" alttext="T_{bc}:=-2:\!b\partial c\!:-:\!(\partial b)c\!:," display="block"><mrow><msub><mi>T</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo lspace="0.278em" rspace="0em">:=</mo><mo lspace="0em">−</mo><mn>2</mn><mo lspace="0.278em" rspace="0.108em">:</mo><mi>b</mi><mo lspace="0em" rspace="0em">∂</mo><mi>c</mi><mo lspace="0.108em" rspace="0em">:</mo><mo lspace="0em" rspace="0em">−</mo><mo rspace="0.108em">:</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">∂</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mi>c</mi><mo lspace="0.108em" rspace="0em">:</mo><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E31.m1" class="ltx_Math" alttext="T_{bc}:=-2b\partial c-(\partial b)c," display="block"><mrow><mrow><msub><mi>T</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>c</mi></mrow></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>c</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.31)</span></td>
 </tr></tbody>
@@ -579,14 +587,14 @@ that</p>
 <tbody id="S1.E40"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E40.m1" class="ltx_Math" alttext="\displaystyle T_{\xi\eta}" display="inline"><msub><mi>T</mi><mrow><mi>ξ</mi><mo>⁢</mo><mi>η</mi></mrow></msub></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E40.m2" class="ltx_math_unparsed" alttext="\displaystyle:=-:\!\eta\partial\xi\!:," display="inline"><mrow><mo rspace="0em">:=</mo><mo lspace="0em" rspace="0em">−</mo><mo rspace="0.108em">:</mo><mi>η</mi><mo lspace="0em" rspace="0em">∂</mo><mi>ξ</mi><mo lspace="0.108em" rspace="0em">:</mo><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E40.m2" class="ltx_Math" alttext="\displaystyle:=-\eta\partial\xi," display="inline"><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo>−</mo><mrow><mi>η</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>ξ</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.40)</span></td>
 </tr></tbody>
 <tbody id="S1.E41"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E41.m1" class="ltx_Math" alttext="\displaystyle T_{\phi}" display="inline"><msub><mi>T</mi><mi>ϕ</mi></msub></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E41.m2" class="ltx_Math" alttext="\displaystyle:=-\frac{1}{2}:\!(\partial\phi)^{2}\!:-\partial^{2}\phi," display="inline"><mrow><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo>−</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>ϕ</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow><mn>2</mn></msup><mo rspace="0.278em">:</mo><mrow><mo>−</mo><mrow><msup><mo lspace="0em" rspace="0em">∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E41.m2" class="ltx_Math" alttext="\displaystyle:=-\frac{1}{2}(\partial\phi)^{2}-\partial^{2}\phi," display="inline"><mrow><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>−</mo><mrow><msup><mo lspace="0em" rspace="0em">∂</mo><mn>2</mn></msup><mi>ϕ</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.41)</span></td>
 </tr></tbody>
@@ -603,8 +611,7 @@ that</p>
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E43.m1" class="ltx_Math" alttext="T_{\beta\gamma}=-\frac{3}{2}:\!\beta\partial\gamma\!:-\frac{1}{2}:\!(\partial%
-\beta)\gamma\!:." display="block"><mrow><mrow><mrow><msub><mi>T</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo>=</mo><mrow><mo>−</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></mrow></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><mrow><mi>β</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>γ</mi></mrow></mrow><mo lspace="0.108em" rspace="0.278em">:</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>γ</mi></mrow><mo lspace="0.108em" rspace="0.278em">:</mo><mi></mi></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E43.m1" class="ltx_Math" alttext="T_{\beta\gamma}=-\frac{3}{2}\beta\partial\gamma-\frac{1}{2}(\partial\beta)\gamma." display="block"><mrow><mrow><msub><mi>T</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>β</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>γ</mi></mrow></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>γ</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.43)</span></td>
 </tr></tbody>
@@ -622,53 +629,72 @@ that</p>
 </div>
 <div id="S1.SS4.p3" class="ltx_para ltx_noindent">
 <p class="ltx_p">The ghost number and picture number used below are additive charges defined
-on the elementary bosonized fields by</p>
+on the elementary bosonized fields by the following table.</p>
+<table class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_tt">field</th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS4.p3.m1" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS4.p3.m2" class="ltx_Math" alttext="\gamma" display="inline"><mi>γ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS4.p3.m3" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS4.p3.m4" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math></th>
+<th class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_tt"><math id="S1.SS4.p3.m5" class="ltx_Math" alttext="e^{q\phi}" display="inline"><msup><mi>e</mi><mrow><mi>q</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup></math></th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_t">ghost number</td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS4.p3.m6" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS4.p3.m7" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS4.p3.m8" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS4.p3.m9" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_t"><math id="S1.SS4.p3.m10" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_bb">picture number</td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS4.p3.m11" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS4.p3.m12" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS4.p3.m13" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS4.p3.m14" class="ltx_Math" alttext="-1" display="inline"><mrow><mo>−</mo><mn>1</mn></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_border_bb"><math id="S1.SS4.p3.m15" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math></td>
+</tr>
+</tbody>
+</table>
+<p class="ltx_p">The conformal weight of the exponential is</p>
 <table id="S1.E45" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E45.m1" class="ltx_Math" alttext="\begin{array}[]{c|ccccc}\text{field}&amp;\beta&amp;\gamma&amp;\xi&amp;\eta&amp;e^{q\phi}\\
-\hline\cr\text{ghost number}&amp;-1&amp;+1&amp;-1&amp;+1&amp;0\\
-\text{picture number}&amp;0&amp;0&amp;+1&amp;-1&amp;q\end{array}." display="block"><mrow><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r"><mtext>field</mtext></mtd><mtd><mi>β</mi></mtd><mtd><mi>γ</mi></mtd><mtd><mi>ξ</mi></mtd><mtd><mi>η</mi></mtd><mtd><msup><mi>e</mi><mrow><mi>q</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd class="ltx_border_r"><mtext>ghost number</mtext></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>+</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>+</mo><mn>1</mn></mrow></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd class="ltx_border_r"><mtext>picture number</mtext></mtd><mtd><mn>0</mn></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo>+</mo><mn>1</mn></mrow></mtd><mtd><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd><mi>q</mi></mtd></mtr></mtable><mo lspace="0.167em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E45.m1" class="ltx_Math" alttext="h\!\left[e^{q\phi}\right]=-\frac{1}{2}q(q+2)." display="block"><mrow><mrow><mrow><mpadded width="0.406em"><mi>h</mi></mpadded><mo>⁢</mo><mrow><mo>[</mo><msup><mi>e</mi><mrow><mi>q</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.45)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The conformal weight of the exponential is</p>
+<p class="ltx_p">The mode expansions of the weight-zero field <math id="S1.SS4.p3.m16" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> and the weight-one field
+<math id="S1.SS4.p3.m17" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math> define</p>
 <table id="S1.E46" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E46.m1" class="ltx_Math" alttext="h\!\left[e^{q\phi}\right]=-\frac{1}{2}q(q+2)." display="block"><mrow><mrow><mrow><mpadded width="0.406em"><mi>h</mi></mpadded><mo>⁢</mo><mrow><mo>[</mo><msup><mi>e</mi><mrow><mi>q</mi><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>]</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E46.m1" class="ltx_Math" alttext="\xi_{0}:=\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}z}\,\xi(z),\qquad\eta_{0}:=%
+\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}}\,\eta(z)." display="block"><mrow><mrow><mrow><msub><mi>ξ</mi><mn>0</mn></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mi>ξ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><msub><mi>η</mi><mn>0</mn></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mi>η</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.46)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The mode expansions of the weight-zero field <math id="S1.SS4.p3.m1" class="ltx_Math" alttext="\xi" display="inline"><mi>ξ</mi></math> and the weight-one field
-<math id="S1.SS4.p3.m2" class="ltx_Math" alttext="\eta" display="inline"><mi>η</mi></math> define</p>
+<p class="ltx_p">The large Hilbert space is the state space on which <math id="S1.SS4.p3.m18" class="ltx_Math" alttext="\xi_{0}" display="inline"><msub><mi>ξ</mi><mn>0</mn></msub></math> acts without the
+restriction in Eq. (<a href="#S1.E47" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.47</span></a>). The small Hilbert space is
+the subspace of states <math id="S1.SS4.p3.m19" class="ltx_Math" alttext="|\Psi\rangle" display="inline"><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ψ</mi><mo stretchy="false">⟩</mo></mrow></math> satisfying</p>
 <table id="S1.E47" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E47.m1" class="ltx_Math" alttext="\xi_{0}:=\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}z}\,\xi(z),\qquad\eta_{0}:=%
-\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}}\,\eta(z)." display="block"><mrow><mrow><mrow><msub><mi>ξ</mi><mn>0</mn></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi><mo>⁢</mo><mi>z</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mi>ξ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="2.167em">,</mo><mrow><msub><mi>η</mi><mn>0</mn></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><mi>η</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E47.m1" class="ltx_Math" alttext="\eta_{0}|\Psi\rangle=0." display="block"><mrow><mrow><mrow><msub><mi>η</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ψ</mi><mo stretchy="false">⟩</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.47)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The large Hilbert space is the state space on which <math id="S1.SS4.p3.m3" class="ltx_Math" alttext="\xi_{0}" display="inline"><msub><mi>ξ</mi><mn>0</mn></msub></math> acts without the
-restriction in Eq. (<a href="#S1.E48" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.48</span></a>). The small Hilbert space is
-the subspace of states <math id="S1.SS4.p3.m4" class="ltx_Math" alttext="|\Psi\rangle" display="inline"><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ψ</mi><mo stretchy="false">⟩</mo></mrow></math> satisfying</p>
-<table id="S1.E48" class="ltx_equation ltx_eqn_table">
-
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E48.m1" class="ltx_Math" alttext="\eta_{0}|\Psi\rangle=0." display="block"><mrow><mrow><mrow><msub><mi>η</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi mathvariant="normal">Ψ</mi><mo stretchy="false">⟩</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.48)</span></td>
-</tr></tbody>
-</table>
-<p class="ltx_p">Equations (<a href="#S1.E34" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.34</span></a>)–(<a href="#S1.E48" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.48</span></a>)
+<p class="ltx_p">Equations (<a href="#S1.E34" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.34</span></a>)–(<a href="#S1.E47" title="In 1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.47</span></a>)
 follow the ordering, charges, and Hilbert-space convention of
 Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="Instanton-Induced Closed-String Amplitudes in Minimal Superstring Theory at Subleading Order" class="ltx_ref">2</a>]</cite>.</p>
 </div>
@@ -684,136 +710,136 @@ and let <math id="S1.SS5.p1.m3" class="ltx_Math" alttext="c_{\mathrm{m}}" displa
 of <math id="S1.SS5.p1.m4" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> and <math id="S1.SS5.p1.m5" class="ltx_Math" alttext="T_{F}" display="inline"><msub><mi>T</mi><mi>F</mi></msub></math> by the singular operator products</p>
 <table id="S1.EGx9" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
+<tbody id="S1.E48"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E48.m1" class="ltx_Math" alttext="\displaystyle T(z)T(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E48.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{c_{\mathrm{m}}/2}{(z-w)^{4}}+\frac{2T(w)}{(z-w)^{2}}+%
+\frac{\partial T(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.48)</span></td>
+</tr></tbody>
 <tbody id="S1.E49"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E49.m1" class="ltx_Math" alttext="\displaystyle T(z)T(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E49.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{c_{\mathrm{m}}/2}{(z-w)^{4}}+\frac{2T(w)}{(z-w)^{2}}+%
-\frac{\partial T(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E49.m1" class="ltx_Math" alttext="\displaystyle T(z)T_{F}(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E49.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{3T_{F}(w)}{2(z-w)^{2}}+\frac{\partial T_{F}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.49)</span></td>
 </tr></tbody>
 <tbody id="S1.E50"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E50.m1" class="ltx_Math" alttext="\displaystyle T(z)T_{F}(w)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E50.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{3T_{F}(w)}{2(z-w)^{2}}+\frac{\partial T_{F}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E50.m1" class="ltx_Math" alttext="\displaystyle T_{F}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E50.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{c_{\mathrm{m}}/6}{(z-w)^{3}}+\frac{T(w)}{2(z-w)}." display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>/</mo><mn>6</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.50)</span></td>
-</tr></tbody>
-<tbody id="S1.E51"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E51.m1" class="ltx_Math" alttext="\displaystyle T_{F}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E51.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{c_{\mathrm{m}}/6}{(z-w)^{3}}+\frac{T(w)}{2(z-w)}." display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>/</mo><mn>6</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.51)</span></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">Thus <math id="S1.SS5.p1.m6" class="ltx_Math" alttext="T_{F}" display="inline"><msub><mi>T</mi><mi>F</mi></msub></math> is one half of a supercurrent <math id="S1.SS5.p1.m7" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> normalized by
 <math id="S1.SS5.p1.m8" class="ltx_Math" alttext="G(z)G(w)\sim(2c_{\mathrm{m}}/3)(z-w)^{-3}+2T(w)(z-w)^{-1}" display="inline"><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∼</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub></mrow><mo>/</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>3</mn></mrow></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow></mrow></math>.
 This explicit algebraic relation is the definition of the relative
 normalization; no separate meaning is assigned to the phrase “normalized
-supercurrent.” Equations (<a href="#S1.E49" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.49</span></a>)–(<a href="#S1.E51" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.51</span></a>) match the
+supercurrent.” Equations (<a href="#S1.E48" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.48</span></a>)–(<a href="#S1.E50" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.50</span></a>) match the
 convention used in Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="Instanton-Induced Closed-String Amplitudes in Minimal Superstring Theory at Subleading Order" class="ltx_ref">2</a>]</cite>.</p>
 </div>
 <div id="S1.SS5.p2" class="ltx_para ltx_noindent">
 <p class="ltx_p">For the ten free bosons and ten free fermions of
 Secs. <a href="#S1.SS1" title="1.1 Conventions for the free boson ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.1</span></a> and <a href="#S1.SS2" title="1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2</span></a>,</p>
-<table id="S1.E52" class="ltx_equation ltx_eqn_table">
+<table id="S1.E51" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E52.m1" class="ltx_Math" alttext="c_{\mathrm{m}}=c_{X}+c_{\psi}=15,\qquad T=T_{\mathrm{m}}." display="block"><mrow><mrow><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>=</mo><mrow><msub><mi>c</mi><mi>X</mi></msub><mo>+</mo><msub><mi>c</mi><mi>ψ</mi></msub></mrow><mo>=</mo><mn>15</mn></mrow><mo rspace="2.167em">,</mo><mrow><mi>T</mi><mo>=</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E51.m1" class="ltx_Math" alttext="c_{\mathrm{m}}=c_{X}+c_{\psi}=15,\qquad T=T_{\mathrm{m}}." display="block"><mrow><mrow><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>=</mo><mrow><msub><mi>c</mi><mi>X</mi></msub><mo>+</mo><msub><mi>c</mi><mi>ψ</mi></msub></mrow><mo>=</mo><mn>15</mn></mrow><mo rspace="2.167em">,</mo><mrow><mi>T</mi><mo>=</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.52)</span></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.51)</span></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">The operator products therefore become</p>
 <table id="S1.EGx10" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
+<tbody id="S1.E52"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E52.m1" class="ltx_Math" alttext="\displaystyle T_{\mathrm{m}}(z)T_{\mathrm{m}}(w)" display="inline"><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E52.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{15/2}{(z-w)^{4}}+\frac{2T_{\mathrm{m}}(w)}{(z-w)^{2}}+%
+\frac{\partial T_{\mathrm{m}}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>15</mn><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.52)</span></td>
+</tr></tbody>
 <tbody id="S1.E53"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E53.m1" class="ltx_Math" alttext="\displaystyle T_{\mathrm{m}}(z)T_{\mathrm{m}}(w)" display="inline"><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E53.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{15/2}{(z-w)^{4}}+\frac{2T_{\mathrm{m}}(w)}{(z-w)^{2}}+%
-\frac{\partial T_{\mathrm{m}}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>15</mn><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>4</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mn>2</mn><mo>⁢</mo><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E53.m1" class="ltx_Math" alttext="\displaystyle T_{\mathrm{m}}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E53.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{3T_{F}(w)}{2(z-w)^{2}}+\frac{\partial T_{F}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.53)</span></td>
 </tr></tbody>
 <tbody id="S1.E54"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E54.m1" class="ltx_Math" alttext="\displaystyle T_{\mathrm{m}}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E54.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{3T_{F}(w)}{2(z-w)^{2}}+\frac{\partial T_{F}(w)}{z-w}," display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>3</mn><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow></mfrac></mstyle></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E54.m1" class="ltx_Math" alttext="\displaystyle T_{F}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E54.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{5/2}{(z-w)^{3}}+\frac{T_{\mathrm{m}}(w)}{2(z-w)}." display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.54)</span></td>
-</tr></tbody>
-<tbody id="S1.E55"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E55.m1" class="ltx_Math" alttext="\displaystyle T_{F}(z)T_{F}(w)" display="inline"><mrow><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E55.m2" class="ltx_Math" alttext="\displaystyle\sim\frac{5/2}{(z-w)^{3}}+\frac{T_{\mathrm{m}}(w)}{2(z-w)}." display="inline"><mrow><mrow><mi></mi><mo>∼</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mn>5</mn><mo>/</mo><mn>2</mn></mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.55)</span></td>
 </tr></tbody>
 </table>
 </div>
 <div id="S1.SS5.p3" class="ltx_para ltx_noindent">
-<p class="ltx_p">For completeness, the coefficients in Eq. (<a href="#S1.E55" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.55</span></a>)
+<p class="ltx_p">For completeness, the coefficients in Eq. (<a href="#S1.E54" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.54</span></a>)
 can be reproduced directly. Substituting
 Eq. (<a href="#S1.E19" title="In 1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.19</span></a>), the double contraction of the two
 fermions and the two differentiated bosons gives</p>
+<table id="S1.E55" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E55.m1" class="ltx_Math" alttext="\left(-\frac{\eta^{MN}}{2(z-w)}\right)\left(-\frac{\eta_{MN}}{2(z-w)^{2}}%
+\right)=\frac{10}{4(z-w)^{3}}=\frac{5}{2(z-w)^{3}}." display="block"><mrow><mrow><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><msup><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mn>10</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.55)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">The single fermion contraction gives</p>
 <table id="S1.E56" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E56.m1" class="ltx_Math" alttext="\left(-\frac{\eta^{MN}}{2(z-w)}\right)\left(-\frac{\eta_{MN}}{2(z-w)^{2}}%
-\right)=\frac{10}{4(z-w)^{3}}=\frac{5}{2(z-w)^{3}}." display="block"><mrow><mrow><mrow><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><msup><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msup><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>−</mo><mfrac><msub><mi>η</mi><mrow><mi>M</mi><mo>⁢</mo><mi>N</mi></mrow></msub><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mfrac><mn>10</mn><mrow><mn>4</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>5</mn><mrow><mn>2</mn><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E56.m1" class="ltx_Math" alttext="-\frac{1}{2(z-w)}\partial X^{M}\partial X_{M}(w)=\frac{T_{X}(w)}{2(z-w)}." display="block"><mrow><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>X</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msub><mi>X</mi><mi>M</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><msub><mi>T</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.56)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The single fermion contraction gives</p>
+<p class="ltx_p">For the single boson contraction, expand
+<math id="S1.SS5.p3.m1" class="ltx_Math" alttext="\psi^{M}(z)=\psi^{M}(w)+(z-w)\partial\psi^{M}(w)+\mathcal{O}((z-w)^{2})" display="inline"><mrow><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
+The zeroth-order product <math id="S1.SS5.p3.m2" class="ltx_Math" alttext="\psi^{M}\psi_{M}" display="inline"><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><msub><mi>ψ</mi><mi>M</mi></msub></mrow></math> vanishes, while the
+first-order term gives</p>
 <table id="S1.E57" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E57.m1" class="ltx_Math" alttext="-\frac{1}{2(z-w)}:\!\partial X^{M}\partial X_{M}\!:(w)=\frac{T_{X}(w)}{2(z-w)}." display="block"><mrow><mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.278em" rspace="0.0539em">:</mo><mrow><mo lspace="0.0539em" rspace="0em">∂</mo><mrow><msup><mi>X</mi><mi>M</mi></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><msub><mi>X</mi><mi>M</mi></msub></mrow></mrow></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>T</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E57.m1" class="ltx_Math" alttext="-\frac{1}{2(z-w)}(\partial\psi^{M})\psi_{M}(w)=\frac{T_{\psi}(w)}{2(z-w)}." display="block"><mrow><mrow><mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><msup><mi>ψ</mi><mi>M</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ψ</mi><mi>M</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mfrac><mrow><msub><mi>T</mi><mi>ψ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.57)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">For the single boson contraction, expand
-<math id="S1.SS5.p3.m1" class="ltx_Math" alttext="\psi^{M}(z)=\psi^{M}(w)+(z-w)\partial\psi^{M}(w)+\mathcal{O}((z-w)^{2})" display="inline"><mrow><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><msup><mi>ψ</mi><mi>M</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>+</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
-The zeroth-order normal product <math id="S1.SS5.p3.m2" class="ltx_math_unparsed" alttext=":\!\psi^{M}\psi_{M}\!:" display="inline"><mrow><mo rspace="0.108em">:</mo><msup><mi>ψ</mi><mi>M</mi></msup><msub><mi>ψ</mi><mi>M</mi></msub><mo lspace="0.278em">:</mo></mrow></math> vanishes, while the
-first-order term gives</p>
-<table id="S1.E58" class="ltx_equation ltx_eqn_table">
-
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E58.m1" class="ltx_Math" alttext="-\frac{1}{2(z-w)}:\!(\partial\psi^{M})\psi_{M}\!:(w)=\frac{T_{\psi}(w)}{2(z-w)}." display="block"><mrow><mrow><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow><mo lspace="0.278em" rspace="0.108em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><msup><mi>ψ</mi><mi>M</mi></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>ψ</mi><mi>M</mi></msub></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mfrac><mrow><msub><mi>T</mi><mi>ψ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>−</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.58)</span></td>
-</tr></tbody>
-</table>
-<p class="ltx_p">Adding Eqs. (<a href="#S1.E56" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.56</span></a>)–(<a href="#S1.E58" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.58</span></a>)
-gives Eq. (<a href="#S1.E55" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.55</span></a>) with
+<p class="ltx_p">Adding Eqs. (<a href="#S1.E55" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.55</span></a>)–(<a href="#S1.E57" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.57</span></a>)
+gives Eq. (<a href="#S1.E54" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.54</span></a>) with
 <math id="S1.SS5.p3.m3" class="ltx_Math" alttext="T_{\mathrm{m}}=T_{X}+T_{\psi}" display="inline"><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>=</mo><mrow><msub><mi>T</mi><mi>X</mi></msub><mo>+</mo><msub><mi>T</mi><mi>ψ</mi></msub></mrow></mrow></math>.</p>
 </div>
 <div id="S1.SS5.p4" class="ltx_para ltx_noindent">
 <p class="ltx_p">The total holomorphic stress tensor of the gauge-fixed critical theory is</p>
+<table id="S1.E58" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E58.m1" class="ltx_Math" alttext="T_{\mathrm{tot}}:=T_{\mathrm{m}}+T_{bc}+T_{\beta\gamma}." display="block"><mrow><mrow><msub><mi>T</mi><mi>tot</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.58)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Its central charge vanishes because</p>
 <table id="S1.E59" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E59.m1" class="ltx_Math" alttext="T_{\mathrm{tot}}:=T_{\mathrm{m}}+T_{bc}+T_{\beta\gamma}." display="block"><mrow><mrow><msub><mi>T</mi><mi>tot</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E59.m1" class="ltx_Math" alttext="c_{\mathrm{tot}}=c_{\mathrm{m}}+c_{bc}+c_{\beta\gamma}=15-26+11=0." display="block"><mrow><mrow><msub><mi>c</mi><mi>tot</mi></msub><mo>=</mo><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>c</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo>+</mo><msub><mi>c</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub></mrow><mo>=</mo><mrow><mrow><mn>15</mn><mo>−</mo><mn>26</mn></mrow><mo>+</mo><mn>11</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.59)</span></td>
-</tr></tbody>
-</table>
-<p class="ltx_p">Its central charge vanishes because</p>
-<table id="S1.E60" class="ltx_equation ltx_eqn_table">
-
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E60.m1" class="ltx_Math" alttext="c_{\mathrm{tot}}=c_{\mathrm{m}}+c_{bc}+c_{\beta\gamma}=15-26+11=0." display="block"><mrow><mrow><msub><mi>c</mi><mi>tot</mi></msub><mo>=</mo><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>c</mi><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></msub><mo>+</mo><msub><mi>c</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub></mrow><mo>=</mo><mrow><mrow><mn>15</mn><mo>−</mo><mn>26</mn></mrow><mo>+</mo><mn>11</mn></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.60)</span></td>
 </tr></tbody>
 </table>
 </div>
@@ -824,59 +850,58 @@ gives Eq. (<a href="#S1.E55" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 
 
 <div id="S1.SS6.p1" class="ltx_para ltx_noindent">
 <p class="ltx_p">The holomorphic BRST current is defined by</p>
+<table id="S1.E60" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E60.m1" class="ltx_Math" alttext="j_{\mathrm{B}}:=c\bigl{(}T_{\mathrm{m}}+T_{\xi\eta}+T_{\phi}\bigr{)}+bc\,%
+\partial c+\gamma T_{F}-\frac{1}{4}\gamma^{2}b." display="block"><mrow><mrow><msub><mi>j</mi><mi mathvariant="normal">B</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mrow><mrow><mi>c</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>ξ</mi><mo>⁢</mo><mi>η</mi></mrow></msub><mo>+</mo><msub><mi>T</mi><mi>ϕ</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>c</mi></mrow></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi>γ</mi><mn>2</mn></msup><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.60)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">In bosonized variables, the composite field <math id="S1.SS6.p1.m1" class="ltx_Math" alttext="\gamma^{2}" display="inline"><msup><mi>γ</mi><mn>2</mn></msup></math> is</p>
 <table id="S1.E61" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E61.m1" class="ltx_Math" alttext="j_{\mathrm{B}}:=c\bigl{(}T_{\mathrm{m}}+T_{\xi\eta}+T_{\phi}\bigr{)}+bc\,%
-\partial c+\gamma T_{F}-\frac{1}{4}\gamma^{2}b." display="block"><mrow><mrow><msub><mi>j</mi><mi mathvariant="normal">B</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mrow><mrow><mi>c</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>T</mi><mi mathvariant="normal">m</mi></msub><mo>+</mo><msub><mi>T</mi><mrow><mi>ξ</mi><mo>⁢</mo><mi>η</mi></mrow></msub><mo>+</mo><msub><mi>T</mi><mi>ϕ</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>c</mi></mrow></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub></mrow></mrow><mo>−</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><msup><mi>γ</mi><mn>2</mn></msup><mo>⁢</mo><mi>b</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E61.m1" class="ltx_Math" alttext="\gamma^{2}:=\gamma\gamma=\eta\,\partial\eta\,e^{2\phi}." display="block"><mrow><mrow><msup><mi>γ</mi><mn>2</mn></msup><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>γ</mi></mrow><mo>=</mo><mrow><mi>η</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">∂</mo><mrow><mi>η</mi><mo lspace="0.170em">⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.61)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">All products on the right-hand side of Eq. (<a href="#S1.E61" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.61</span></a>) are
-normal ordered. In bosonized variables, the composite field <math id="S1.SS6.p1.m1" class="ltx_Math" alttext="\gamma^{2}" display="inline"><msup><mi>γ</mi><mn>2</mn></msup></math> is</p>
+<p class="ltx_p">The BRST charge is the contour integral</p>
 <table id="S1.E62" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E62.m1" class="ltx_math_unparsed" alttext="\gamma^{2}:=:\!\gamma\gamma\!:=\eta\,\partial\eta\,e^{2\phi}." display="block"><mrow><msup><mi>γ</mi><mn>2</mn></msup><mo lspace="0.278em" rspace="0em">:=</mo><mo rspace="0.108em">:</mo><mi>γ</mi><mi>γ</mi><mo lspace="0.108em" rspace="0.278em">:=</mo><mi>η</mi><mo lspace="0.170em" rspace="0em">∂</mo><mi>η</mi><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E62.m1" class="ltx_Math" alttext="Q_{\mathrm{B}}:=\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}}\,j_{\mathrm{B}}(z)," display="block"><mrow><mrow><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><msub><mi>j</mi><mi mathvariant="normal">B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.62)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The BRST charge is the contour integral</p>
+<p class="ltx_p">where the contour is counterclockwise around the operator on which <math id="S1.SS6.p1.m2" class="ltx_Math" alttext="Q_{\mathrm{B}}" display="inline"><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub></math>
+acts. The balance <math id="S1.SS6.p1.m3" class="ltx_Math" alttext="c_{\mathrm{m}}=15" display="inline"><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>=</mo><mn>15</mn></mrow></math> in
+Eq. (<a href="#S1.E51" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.51</span></a>) implies</p>
 <table id="S1.E63" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E63.m1" class="ltx_Math" alttext="Q_{\mathrm{B}}:=\oint\frac{\mathrm{d}z}{2\pi\mathrm{i}}\,j_{\mathrm{B}}(z)," display="block"><mrow><mrow><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo lspace="0.278em" rspace="0.111em">:=</mo><mrow><mo>∮</mo><mrow><mfrac><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>z</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">i</mi></mrow></mfrac><mo lspace="0.170em">⁢</mo><msub><mi>j</mi><mi mathvariant="normal">B</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E63.m1" class="ltx_Math" alttext="Q_{\mathrm{B}}^{2}=0." display="block"><mrow><mrow><msubsup><mi>Q</mi><mi mathvariant="normal">B</mi><mn>2</mn></msubsup><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.63)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">where the contour is counterclockwise around the operator on which <math id="S1.SS6.p1.m2" class="ltx_Math" alttext="Q_{\mathrm{B}}" display="inline"><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub></math>
-acts. The balance <math id="S1.SS6.p1.m3" class="ltx_Math" alttext="c_{\mathrm{m}}=15" display="inline"><mrow><msub><mi>c</mi><mi mathvariant="normal">m</mi></msub><mo>=</mo><mn>15</mn></mrow></math> in
-Eq. (<a href="#S1.E52" title="In 1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.52</span></a>) implies</p>
+<p class="ltx_p">The anti-holomorphic charge <math id="S1.SS6.p1.m4" class="ltx_Math" alttext="\widetilde{Q}_{\mathrm{B}}" display="inline"><msub><mover accent="true"><mi>Q</mi><mo>~</mo></mover><mi mathvariant="normal">B</mi></msub></math> is defined by the
+tilded copy of Eqs. (<a href="#S1.E60" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.60</span></a>)–(<a href="#S1.E62" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.62</span></a>); the
+closed-string BRST charge is</p>
 <table id="S1.E64" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E64.m1" class="ltx_Math" alttext="Q_{\mathrm{B}}^{2}=0." display="block"><mrow><mrow><msubsup><mi>Q</mi><mi mathvariant="normal">B</mi><mn>2</mn></msubsup><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E64.m1" class="ltx_Math" alttext="Q_{\mathrm{closed}}:=Q_{\mathrm{B}}+\widetilde{Q}_{\mathrm{B}}." display="block"><mrow><mrow><msub><mi>Q</mi><mi>closed</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>+</mo><msub><mover accent="true"><mi>Q</mi><mo>~</mo></mover><mi mathvariant="normal">B</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.64)</span></td>
-</tr></tbody>
-</table>
-<p class="ltx_p">The anti-holomorphic charge <math id="S1.SS6.p1.m4" class="ltx_Math" alttext="\widetilde{Q}_{\mathrm{B}}" display="inline"><msub><mover accent="true"><mi>Q</mi><mo>~</mo></mover><mi mathvariant="normal">B</mi></msub></math> is defined by the
-tilded copy of Eqs. (<a href="#S1.E61" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.61</span></a>)–(<a href="#S1.E63" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.63</span></a>); the
-closed-string BRST charge is</p>
-<table id="S1.E65" class="ltx_equation ltx_eqn_table">
-
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E65.m1" class="ltx_Math" alttext="Q_{\mathrm{closed}}:=Q_{\mathrm{B}}+\widetilde{Q}_{\mathrm{B}}." display="block"><mrow><mrow><msub><mi>Q</mi><mi>closed</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>+</mo><msub><mover accent="true"><mi>Q</mi><mo>~</mo></mover><mi mathvariant="normal">B</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.65)</span></td>
 </tr></tbody>
 </table>
 </div>
@@ -886,55 +911,55 @@ closed-string BRST charge is</p>
 defined in the large Hilbert space by</p>
 <table id="S1.EGx11" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
 
+<tbody id="S1.E65"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E65.m1" class="ltx_Math" alttext="\displaystyle\mathcal{X}(z)" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E65.m2" class="ltx_Math" alttext="\displaystyle:=2\{Q_{\mathrm{B}},\xi(z)\}" display="inline"><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mrow><mi>ξ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.65)</span></td>
+</tr></tbody>
 <tbody id="S1.E66"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.E66.m1" class="ltx_Math" alttext="\displaystyle\mathcal{X}(z)" display="inline"><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E66.m2" class="ltx_Math" alttext="\displaystyle:=2\{Q_{\mathrm{B}},\xi(z)\}" display="inline"><mrow><mi></mi><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mrow><mi>ξ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E66.m1" class="ltx_Math" alttext="\displaystyle=2c\,\partial\xi+2e^{\phi}T_{F}-\frac{1}{2}\left[(\partial\eta)e^%
+{2\phi}b+\partial\bigl{(}\eta e^{2\phi}b\bigr{)}\right](z)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>ξ</mi></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>e</mi><mi>ϕ</mi></msup><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>[</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>η</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>η</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>⁢</mo><mi>b</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.66)</span></td>
 </tr></tbody>
-<tbody id="S1.E67"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+</table>
+<p class="ltx_p">The factor of two in Eq. (<a href="#S1.E65" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.65</span></a>) is part of the convention
+adopted from Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="Instanton-Induced Closed-String Amplitudes in Minimal Superstring Theory at Subleading Order" class="ltx_ref">2</a>]</cite>. Define
+<math id="S1.SS6.p2.m4" class="ltx_Math" alttext="X_{\mathrm{common}}:=\{Q_{\mathrm{B}},\xi\}" display="inline"><mrow><msub><mi>X</mi><mi>common</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mi>ξ</mi><mo stretchy="false">}</mo></mrow></mrow></math> to be the PCO without this factor. The
+two conventions obey</p>
+<table id="S1.E67" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_td ltx_eqn_cell"></td>
-<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.E67.m1" class="ltx_Math" alttext="\displaystyle=2c\,\partial\xi+2e^{\phi}T_{F}-\frac{1}{2}\left[(\partial\eta)e^%
-{2\phi}b+\partial\bigl{(}\eta e^{2\phi}b\bigr{)}\right](z)." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">∂</mo><mi>ξ</mi></mrow></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>e</mi><mi>ϕ</mi></msup><mo>⁢</mo><msub><mi>T</mi><mi>F</mi></msub></mrow></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>⁢</mo><mrow><mo>[</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mi>η</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>⁢</mo><mi>b</mi></mrow><mo>+</mo><mrow><mo lspace="0em" rspace="0em">∂</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>η</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mn>2</mn><mo>⁢</mo><mi>ϕ</mi></mrow></msup><mo>⁢</mo><mi>b</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>]</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E67.m1" class="ltx_Math" alttext="\mathcal{X}=2X_{\mathrm{common}}." display="block"><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>X</mi><mi>common</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.67)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The factor of two in Eq. (<a href="#S1.E66" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.66</span></a>) is part of the convention
-adopted from Ref. <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="Instanton-Induced Closed-String Amplitudes in Minimal Superstring Theory at Subleading Order" class="ltx_ref">2</a>]</cite>. Define
-<math id="S1.SS6.p2.m4" class="ltx_Math" alttext="X_{\mathrm{common}}:=\{Q_{\mathrm{B}},\xi\}" display="inline"><mrow><msub><mi>X</mi><mi>common</mi></msub><mo lspace="0.278em" rspace="0.278em">:=</mo><mrow><mo stretchy="false">{</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mi>ξ</mi><mo stretchy="false">}</mo></mrow></mrow></math> to be the PCO without this factor. The
-two conventions obey</p>
+<p class="ltx_p">The PCO <math id="S1.SS6.p2.m5" class="ltx_Math" alttext="\mathcal{X}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒳</mi></math> has conformal weight zero, ghost number zero, picture number
+<math id="S1.SS6.p2.m6" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math>, and is BRST closed:</p>
 <table id="S1.E68" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E68.m1" class="ltx_Math" alttext="\mathcal{X}=2X_{\mathrm{common}}." display="block"><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msub><mi>X</mi><mi>common</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E68.m1" class="ltx_Math" alttext="[Q_{\mathrm{B}},\mathcal{X}(z)]=0." display="block"><mrow><mrow><mrow><mo stretchy="false">[</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.68)</span></td>
 </tr></tbody>
 </table>
-<p class="ltx_p">The PCO <math id="S1.SS6.p2.m5" class="ltx_Math" alttext="\mathcal{X}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒳</mi></math> has conformal weight zero, ghost number zero, picture number
-<math id="S1.SS6.p2.m6" class="ltx_Math" alttext="+1" display="inline"><mrow><mo>+</mo><mn>1</mn></mrow></math>, and is BRST closed:</p>
+<p class="ltx_p">The anti-holomorphic PCO is</p>
 <table id="S1.E69" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E69.m1" class="ltx_Math" alttext="[Q_{\mathrm{B}},\mathcal{X}(z)]=0." display="block"><mrow><mrow><mrow><mo stretchy="false">[</mo><msub><mi>Q</mi><mi mathvariant="normal">B</mi></msub><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow></math></td>
-<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.69)</span></td>
-</tr></tbody>
-</table>
-<p class="ltx_p">The anti-holomorphic PCO is</p>
-<table id="S1.E70" class="ltx_equation ltx_eqn_table">
-
-<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
-<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E70.m1" class="ltx_Math" alttext="\widetilde{\mathcal{X}}(\bar{z}):=2\{\widetilde{Q}_{\mathrm{B}},\widetilde{\xi%
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E69.m1" class="ltx_Math" alttext="\widetilde{\mathcal{X}}(\bar{z}):=2\{\widetilde{Q}_{\mathrm{B}},\widetilde{\xi%
 }(\bar{z})\}." display="block"><mrow><mrow><mrow><mover accent="true"><mi class="ltx_font_mathcaligraphic">𝒳</mi><mo>~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">{</mo><msub><mover accent="true"><mi>Q</mi><mo>~</mo></mover><mi mathvariant="normal">B</mi></msub><mo>,</mo><mrow><mover accent="true"><mi>ξ</mi><mo>~</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.70)</span></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.69)</span></td>
 </tr></tbody>
 </table>
 </div>
@@ -943,17 +968,17 @@ two conventions obey</p>
 <math id="S1.SS6.p3.m2" class="ltx_Math" alttext="b\in\mathbb{Z}_{\geq 0}" display="inline"><mrow><mi>b</mi><mo>∈</mo><msub><mi>ℤ</mi><mrow><mi></mi><mo>≥</mo><mn>0</mn></mrow></msub></mrow></math> boundary components, define <math id="S1.SS6.p3.m3" class="ltx_Math" alttext="P_{\mathrm{tot}}" display="inline"><msub><mi>P</mi><mi>tot</mi></msub></math> to
 be the sum of the picture numbers of all holomorphic and anti-holomorphic
 insertions, including PCOs. A nonzero correlator requires</p>
-<table id="S1.E71" class="ltx_equation ltx_eqn_table">
+<table id="S1.E70" class="ltx_equation ltx_eqn_table">
 
 <tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
 <td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
-<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E71.m1" class="ltx_Math" alttext="P_{\mathrm{tot}}=2(2g+b-2)." display="block"><mrow><mrow><msub><mi>P</mi><mi>tot</mi></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi></mrow><mo>+</mo><mi>b</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E70.m1" class="ltx_Math" alttext="P_{\mathrm{tot}}=2(2g+b-2)." display="block"><mrow><mrow><msub><mi>P</mi><mi>tot</mi></msub><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi></mrow><mo>+</mo><mi>b</mi></mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></math></td>
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
-<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.71)</span></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1.70)</span></td>
 </tr></tbody>
 </table>
 <p class="ltx_p">For a closed worldsheet, <math id="S1.SS6.p3.m4" class="ltx_Math" alttext="b=0" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow></math>, this condition can be imposed separately as
-<math id="S1.SS6.p3.m5" class="ltx_Math" alttext="P_{\mathrm{L}}=P_{\mathrm{R}}=2g-2" display="inline"><mrow><msub><mi>P</mi><mi mathvariant="normal">L</mi></msub><mo>=</mo><msub><mi>P</mi><mi mathvariant="normal">R</mi></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi></mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>. Equation (<a href="#S1.E71" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.71</span></a>)
+<math id="S1.SS6.p3.m5" class="ltx_Math" alttext="P_{\mathrm{L}}=P_{\mathrm{R}}=2g-2" display="inline"><mrow><msub><mi>P</mi><mi mathvariant="normal">L</mi></msub><mo>=</mo><msub><mi>P</mi><mi mathvariant="normal">R</mi></msub><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi></mrow><mo>−</mo><mn>2</mn></mrow></mrow></math>. Equation (<a href="#S1.E70" title="In 1.6 Conventions for the BRST and PCO operators ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.70</span></a>)
 explains why PCO insertions are required when the picture numbers of the
 vertex operators do not already have the required sum.</p>
 </div>
@@ -974,8 +999,7 @@ vertex operators do not already have the required sum.</p>
 <span class="ltx_bibblock">External Links: <span class="ltx_text ltx_bib_links"><span class="ltx_text ltx_bib_external">2110.06949</span>,
 <a href="https://dx.doi.org/10.1007/JHEP12%282021%29044" title="" class="ltx_ref doi ltx_bib_external">Document</a></span>
 </span>
-<span class="ltx_bibblock ltx_bib_cited">Cited by: <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title">Worldsheet Conventions for Type IIB String Theory</span></span>,
-<a href="#S1.SS2.p2" title="1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2</span></a>,
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S1.SS2.p2" title="1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2</span></a>,
 <a href="#S1.SS2.p4" title="1.2 Conventions for the free fermion ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.2</span></a>.
 </span>
 </li>
@@ -987,8 +1011,7 @@ vertex operators do not already have the required sum.</p>
 </span>
 <span class="ltx_bibblock">External Links: <span class="ltx_text ltx_bib_links"><span class="ltx_text ltx_bib_external">2606.06596</span></span>
 </span>
-<span class="ltx_bibblock ltx_bib_cited">Cited by: <span class="ltx_ref ltx_ref_self"><span class="ltx_text ltx_ref_title">Worldsheet Conventions for Type IIB String Theory</span></span>,
-<a href="#S1.SS1.p1" title="1.1 Conventions for the free boson ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.1</span></a>,
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S1.SS1.p1" title="1.1 Conventions for the free boson ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.1</span></a>,
 <a href="#S1.SS3.p2" title="1.3 Conventions for the 𝑏⁢𝑐 ghost system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.3</span></a>,
 <a href="#S1.SS4.p3" title="1.4 Conventions for the 𝛽⁢𝛾 system ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.4</span></a>,
 <a href="#S1.SS5.p1" title="1.5 Conventions for the 𝑇⁢𝑇 and 𝑇_𝐹⁢𝑇_𝐹 operator products ‣ 1 Flat-space worldsheet conventions ‣ Worldsheet Conventions for Type IIB String Theory" class="ltx_ref"><span class="ltx_text ltx_ref_tag">§1.5</span></a>,
@@ -1000,7 +1023,7 @@ vertex operators do not already have the required sum.</p>
 </article>
 </div>
 <footer class="ltx_page_footer">
-<div class="ltx_page_logo">Generated  on Mon Aug 31 15:06:22 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Aug 31 15:24:38 2026 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </main>
