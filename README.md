@@ -7,7 +7,9 @@ This repository collects documents for the Instantons in Type IIB String Theory 
 - [Download its PDF](https://raghu-mahajan.github.io/Type-IIB-Instanton/worldsheet-conventions/worldsheet-conventions.pdf)
 - [Edit the LaTeX source](Notes/type_iib_worldsheet_conventions.tex)
 
-The formulas are grounded principally in arXiv:2606.06596, with the ten-dimensional gamma-matrix and spin-field conventions taken from arXiv:2110.06949.
+The formulas are grounded principally in arXiv:2606.06596, with the ten-dimensional gamma-matrix and spin-field conventions taken from arXiv:2110.06949. The cocycle and Grassmann-parity conventions for the bosonized superghost exponentials are checked against arXiv:2405.19421.
+
+Local working copies of external papers and their available source archives are kept under `References/`. These files are excluded from Git because the repository records the authoritative arXiv links instead of republishing third-party papers.
 
 ## Build
 

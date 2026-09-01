@@ -268,13 +268,27 @@ the placement of the spinor index is part of this convention and is fixed by
 the operator products below, rather than by an unstated index-raising rule.
 
 The Ramond operator products also contain the bosonized superghost $\phi$.
-For use in the next three equations, $\phi$ is defined by
+The scalar $\phi$ is Grassmann even.  The symbol $e^{q\phi}$ denotes its
+exponential together with the cocycle factor, namely the $z$-independent
+factor that supplies the Grassmann parity required by the bosonization.  For
+integer $q$, we define
+\[
+\left|e^{q\phi}\right|:=q\pmod 2,
+\qquad q\in\mathbb Z.
+\]
+Thus $e^{q\phi}$ is Grassmann odd when $q$ is odd.  For half-integer $q$, a
+Grassmann parity is assigned only to the complete Ramond operator containing
+$e^{q\phi}$ and a spin field, rather than to $e^{q\phi}$ by itself.  For
+$q_1,q_2\in\tfrac12\mathbb Z$, the scalar and exponential operator products
+used below are
 \begin{equation}
+\begin{aligned}
 \partial\phi(z)\partial\phi(w)
-\sim-\frac{1}{(z-w)^2},
-\qquad
+&\sim-\frac{1}{(z-w)^2},
+\\
 e^{q_1\phi}(z)e^{q_2\phi}(w)
-\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
+&\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
+\end{aligned}
 \label{eq:phi-provisional-definition}
 \end{equation}
 The complete $\beta\gamma$ bosonization is given in
@@ -356,7 +370,7 @@ normalization of the string amplitude and is not assumed in these notes.
 
 The superconformal ghosts $\beta(z)$ and $\gamma(z)$ are Grassmann even and
 have conformal weights $3/2$ and $-1/2$, respectively.  We bosonize them in
-terms of Grassmann-odd fields $\xi,\eta$ and a Grassmann-even chiral scalar
+terms of Grassmann-odd fields $\xi,\eta$ and the Grassmann-even chiral scalar
 $\phi$ by
 \begin{align}
 \beta
@@ -367,9 +381,11 @@ $\phi$ by
 &:=\eta\,e^{\phi}.
 \label{eq:gamma-bosonization}
 \end{align}
-The order of the factors in Eqs.~\eqref{eq:beta-bosonization} and
-\eqref{eq:gamma-bosonization} is part of the convention.  The elementary
-operator products are
+The cocycle convention preceding Eq.~\eqref{eq:phi-provisional-definition}
+makes both $e^{-\phi}$ and $e^\phi$ Grassmann odd.  Consequently, each
+right-hand side in Eqs.~\eqref{eq:beta-bosonization} and
+\eqref{eq:gamma-bosonization} is Grassmann even.  The displayed factor order
+is part of the convention.  The elementary operator products are
 \begin{align}
 \xi(z)\eta(w)
 &\sim\frac{1}{z-w},
@@ -383,12 +399,38 @@ e^{q_1\phi}(z)e^{q_2\phi}(w)
 &\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
 \label{eq:exp-phi-ope}
 \end{align}
-It follows from Eqs.~\eqref{eq:beta-bosonization}--\eqref{eq:exp-phi-ope}
-that
+Graded locality and differentiation of Eq.~\eqref{eq:xi-eta-ope} give
+\begin{align*}
+\partial\xi(z)\eta(w)
+&\sim-\frac{1}{(z-w)^2},
+\\
+\eta(z)\partial\xi(w)
+&\sim\frac{1}{(z-w)^2}.
+\end{align*}
+Moving the odd exponential through the odd $\eta$ or $\partial\xi$ therefore
+gives
+\begin{align*}
+\beta(z)\gamma(w)
+&=\partial\xi(z)e^{-\phi}(z)\eta(w)e^\phi(w)
+\\
+&=-\partial\xi(z)\eta(w)e^{-\phi}(z)e^\phi(w)
+\sim\frac{1}{z-w},
+\\
+\gamma(z)\beta(w)
+&=\eta(z)e^\phi(z)\partial\xi(w)e^{-\phi}(w)
+\\
+&=-\eta(z)\partial\xi(w)e^\phi(z)e^{-\phi}(w)
+\sim-\frac{1}{z-w}.
+\end{align*}
+Thus
 \begin{equation}
-\beta(z)\gamma(w)\sim-\frac{1}{z-w},
-\qquad
-\gamma(z)\beta(w)\sim\frac{1}{z-w}.
+\begin{aligned}
+\beta(z)\gamma(w)
+&\sim\frac{1}{z-w},
+\\
+\gamma(z)\beta(w)
+&\sim-\frac{1}{z-w}.
+\end{aligned}
 \label{eq:beta-gamma-ope}
 \end{equation}
 
@@ -409,8 +451,8 @@ T_{\beta\gamma}
 In the unbosonized variables, the same stress tensor is
 \begin{equation}
 T_{\beta\gamma}
-=-\frac32\beta\partial\gamma
--\frac12(\partial\beta)\gamma.
+=\frac32\beta\partial\gamma
++\frac12\gamma\partial\beta.
 \label{eq:T-beta-gamma-unbosonized}
 \end{equation}
 Its central charge is
@@ -428,11 +470,13 @@ field & $\beta$ & $\gamma$ & $\xi$ & $\eta$ & $e^{q\phi}$ \\
 \midrule
 ghost number & $-1$ & $+1$ & $-1$ & $+1$ & $0$ \\
 picture number & $0$ & $0$ & $+1$ & $-1$ & $q$ \\
+Grassmann parity & $0$ & $0$ & $1$ & $1$ & $q\bmod 2$ \\
 \bottomrule
 \end{tabular}
 \end{center}
 \medskip
-The conformal weight of the exponential is
+The last entry in the Grassmann-parity row applies to $q\in\mathbb Z$.  The
+conformal weight of the exponential, for $q\in\tfrac12\mathbb Z$, is
 \begin{equation}
 h\!\left[e^{q\phi}\right]
 =-\frac12q(q+2).
@@ -455,7 +499,11 @@ the subspace of states $|\Psi\rangle$ satisfying
 \end{equation}
 Equations~\eqref{eq:beta-bosonization}--\eqref{eq:small-hilbert-space}
 follow the ordering, charges, and Hilbert-space convention of
-Ref.~\cite{Barman:2026qzi}.
+Ref.~\cite{Barman:2026qzi}.  The cocycle grading and the positive coefficients
+in Eq.~\eqref{eq:T-beta-gamma-unbosonized} agree with
+Eqs.~(3.17)--(3.20) of Ref.~\cite{Sen:2024review}; the parity discussion after
+Eq.~(3.27) of that reference assigns $e^{q\phi}$ the corresponding
+$(-1)^q$ GSO parity for integer $q$.
 
 \subsection{Conventions for the \texorpdfstring{$TT$ and $T_FT_F$}{TT and TF TF} operator products}
 \label{sec:super-virasoro}

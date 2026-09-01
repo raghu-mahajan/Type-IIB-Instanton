@@ -14,3 +14,6 @@ Notes/build/
 
 # Render-verification intermediates
 tmp/
+
+# Local copies of third-party references
+References/arXiv-*/
