@@ -55,7 +55,6 @@ html = html.replace(
 
 actions = """<div class="article-actions" aria-label="Downloads">
   <a class="primary-action" href="type_iib_worldsheet_conventions.pdf">Read the PDF</a>
-  <a href="type_iib_worldsheet_conventions.tex">Download the TeX source</a>
 </div>"""
 
 html = re.sub(
