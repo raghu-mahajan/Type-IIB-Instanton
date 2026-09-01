@@ -1,0 +1,11 @@
+{
+  "project_title": "Instantons in Type IIB String Theory",
+  "documents": [
+    {
+      "slug": "worldsheet-conventions",
+      "title": "Worldsheet Conventions for Type IIB String Theory",
+      "source": "type_iib_worldsheet_conventions.tex",
+      "description": "Worldsheet conventions for flat ten-dimensional Type IIB string theory, including free fields, ghosts, spin fields, BRST, and picture changing."
+    }
+  ]
+}
