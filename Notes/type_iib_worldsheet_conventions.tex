@@ -93,14 +93,311 @@ T(z)\cO_h(w)
 \label{eq:conformal-weight-definition}
 \end{equation}
 \item
-The central charge $c$ of $T$ is defined so that the coefficient of
-$(z-w)^{-4}$ in $T(z)T(w)$ is $c/2$.
+Let $T(z)$ be the stress tensor, let $\TF(z)$ be its supercurrent, and let
+$c$ be its central charge.  We define the normalization of these fields by
+the singular operator products
+\begin{align}
+T(z)T(w)
+&\sim
+\frac{c/2}{(z-w)^4}
++\frac{2T(w)}{(z-w)^2}
++\frac{\partial T(w)}{z-w},
+\label{eq:TT-ope}
+\\
+T(z)\TF(w)
+&\sim
+\frac{3}{2}\,
+\frac{\TF(w)}{(z-w)^2}
++\frac{\partial\TF(w)}{z-w},
+\label{eq:T-TF-ope}
+\\
+\TF(z)\TF(w)
+&\sim
+\frac{c/6}{(z-w)^3}
++\frac{T(w)}{2(z-w)}.
+\label{eq:TF-TF-ope}
+\end{align}
+Equations~\eqref{eq:TT-ope}--\eqref{eq:TF-TF-ope} match the convention used
+in Ref.~\cite{Barman:2026qzi}.
 \item
 A field of Grassmann parity
 $|A|\in\{0,1\}$ is called even when $|A|=0$ and odd when $|A|=1$; away from
 operator-product singularities, two such fields obey
 $AB=(-1)^{|A||B|}BA$.
 \end{enumerate}
+
+\subsection{Conventions for the \texorpdfstring{$bc$}{bc} ghost system}
+\label{sec:bc-system}
+
+The reparametrization ghosts $b(z)$ and $c(z)$ are Grassmann odd.  Their
+holomorphic conformal weights and ghost numbers are
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+field & $h$ & ghost number \\
+\midrule
+$b$ & $2$ & $-1$ \\
+$c$ & $-1$ & $+1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+Their singular operator product is
+\begin{equation}
+b(z)c(w)\sim\frac{1}{z-w}.
+\label{eq:bc-data}
+\end{equation}
+The $bc$ stress tensor is defined by
+\begin{equation}
+T_{bc}:=-2b\partial c-(\partial b)c,
+\label{eq:Tbc-definition}
+\end{equation}
+and its central charge is
+\begin{equation}
+c_{bc}=-26.
+\label{eq:cbc}
+\end{equation}
+
+On the complex plane, a nonzero $bc$ correlator contains three more $c$
+insertions than $b$ insertions.  We define the
+constant $K$ by the normalization used in Ref.~\cite{Barman:2026qzi}:
+\begin{equation}
+\left\langle c(z_1)c(z_2)c(z_3)\right\rangle_{bc}
+:=-K(z_1-z_2)(z_2-z_3)(z_1-z_3).
+\label{eq:ccc-normalization}
+\end{equation}
+Here the subscript $bc$ means that the expectation value is taken only in
+the $bc$ sector.  Equation~\eqref{eq:ccc-normalization} defines $K$; its
+relation to a D-brane or D-instanton tension additionally depends on the
+normalization of the string amplitude and is not assumed in these notes.
+
+\subsection{Conventions for the \texorpdfstring{$\beta\gamma$}{beta-gamma} system}
+\label{sec:beta-gamma}
+
+The superconformal ghosts $\beta(z)$ and $\gamma(z)$ are Grassmann even and
+have conformal weights $3/2$ and $-1/2$, respectively.  We bosonize them in
+terms of Grassmann-odd fields $\xi,\eta$ and the Grassmann-even chiral scalar
+$\phi$.  The symbol $e^{q\phi}$ denotes the exponential of $\phi$ together
+with its cocycle factor, namely the $z$-independent factor that supplies the
+Grassmann parity required by the bosonization.  For integer $q$, we define
+\begin{equation}
+\left|e^{q\phi}\right|:=q\pmod 2,
+\qquad q\in\mathbb Z.
+\label{eq:exp-phi-parity}
+\end{equation}
+Thus $e^{q\phi}$ is Grassmann odd when $q$ is odd.  For half-integer $q$, a
+Grassmann parity is assigned only to a complete Ramond operator containing
+$e^{q\phi}$ and a spin field, rather than to $e^{q\phi}$ by itself.  The
+bosonization convention is
+\begin{align}
+\beta
+&:=\partial\xi\,e^{-\phi},
+\label{eq:beta-bosonization}
+\\
+\gamma
+&:=\eta\,e^{\phi}.
+\label{eq:gamma-bosonization}
+\end{align}
+Equation~\eqref{eq:exp-phi-parity} makes both $e^{-\phi}$ and $e^\phi$
+Grassmann odd.  Consequently, each
+right-hand side in Eqs.~\eqref{eq:beta-bosonization} and
+\eqref{eq:gamma-bosonization} is Grassmann even.  The displayed factor order
+is part of the convention.  The elementary operator products are
+\begin{align}
+\xi(z)\eta(w)
+&\sim\frac{1}{z-w},
+\label{eq:xi-eta-ope}
+\\
+\partial\phi(z)\partial\phi(w)
+&\sim-\frac{1}{(z-w)^2},
+\label{eq:dphi-dphi-ope}
+\\
+e^{q_1\phi}(z)e^{q_2\phi}(w)
+&\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
+\label{eq:exp-phi-ope}
+\end{align}
+Graded locality and differentiation of Eq.~\eqref{eq:xi-eta-ope} give
+\begin{align*}
+\partial\xi(z)\eta(w)
+&\sim-\frac{1}{(z-w)^2},
+\\
+\eta(z)\partial\xi(w)
+&\sim\frac{1}{(z-w)^2}.
+\end{align*}
+Moving the odd exponential through the odd $\eta$ or $\partial\xi$ therefore
+gives
+\begin{align*}
+\beta(z)\gamma(w)
+&=\partial\xi(z)e^{-\phi}(z)\eta(w)e^\phi(w)
+\\
+&=-\partial\xi(z)\eta(w)e^{-\phi}(z)e^\phi(w)
+\sim\frac{1}{z-w},
+\\
+\gamma(z)\beta(w)
+&=\eta(z)e^\phi(z)\partial\xi(w)e^{-\phi}(w)
+\\
+&=-\eta(z)\partial\xi(w)e^\phi(z)e^{-\phi}(w)
+\sim-\frac{1}{z-w}.
+\end{align*}
+Thus
+\begin{equation}
+\begin{aligned}
+\beta(z)\gamma(w)
+&\sim\frac{1}{z-w},
+\\
+\gamma(z)\beta(w)
+&\sim-\frac{1}{z-w}.
+\end{aligned}
+\label{eq:beta-gamma-ope}
+\end{equation}
+
+The bosonized stress tensors are
+\begin{align}
+T_{\xi\eta}
+&:=-\eta\partial\xi,
+\label{eq:T-xi-eta}
+\\
+T_\phi
+&:=-\frac12(\partial\phi)^2-\partial^2\phi,
+\label{eq:T-phi}
+\\
+T_{\beta\gamma}
+&:=T_{\xi\eta}+T_\phi.
+\label{eq:T-beta-gamma}
+\end{align}
+In the unbosonized variables, the same stress tensor is
+\begin{equation}
+T_{\beta\gamma}
+=\frac32\beta\partial\gamma
++\frac12\gamma\partial\beta.
+\label{eq:T-beta-gamma-unbosonized}
+\end{equation}
+Its central charge is
+\begin{equation}
+c_{\beta\gamma}=11.
+\label{eq:c-beta-gamma}
+\end{equation}
+
+The ghost number and picture number used below are additive charges defined
+on the elementary bosonized fields by the following table.
+\begin{center}
+\begin{tabular}{lccccc}
+\toprule
+field & $\beta$ & $\gamma$ & $\xi$ & $\eta$ & $e^{q\phi}$ \\
+\midrule
+ghost number & $-1$ & $+1$ & $-1$ & $+1$ & $0$ \\
+picture number & $0$ & $0$ & $+1$ & $-1$ & $q$ \\
+Grassmann parity & $0$ & $0$ & $1$ & $1$ & $q\bmod 2$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+\medskip
+The last entry in the Grassmann-parity row applies to $q\in\mathbb Z$.  The
+conformal weight of the exponential, for $q\in\tfrac12\mathbb Z$, is
+\begin{equation}
+h\!\left[e^{q\phi}\right]
+=-\frac12q(q+2).
+\label{eq:phi-exponential-weight}
+\end{equation}
+The mode expansions of the weight-zero field $\xi$ and the weight-one field
+$\eta$ define
+\begin{equation}
+\xi_0:=\oint\frac{\d z}{2\pi\i z}\,\xi(z),
+\qquad
+\eta_0:=\oint\frac{\d z}{2\pi\i}\,\eta(z).
+\label{eq:xi-eta-zero-modes}
+\end{equation}
+The large Hilbert space is the state space on which $\xi_0$ acts without the
+restriction in Eq.~\eqref{eq:small-hilbert-space}.  The small Hilbert space is
+the subspace of states $|\Psi\rangle$ satisfying
+\begin{equation}
+\eta_0|\Psi\rangle=0.
+\label{eq:small-hilbert-space}
+\end{equation}
+Equations~\eqref{eq:beta-bosonization}--\eqref{eq:small-hilbert-space}
+follow the ordering, charges, and Hilbert-space convention of
+Ref.~\cite{Barman:2026qzi}.  The cocycle grading and the positive coefficients
+in Eq.~\eqref{eq:T-beta-gamma-unbosonized} agree with
+Eqs.~(3.17)--(3.20) of Ref.~\cite{Sen:2024review}; the parity discussion after
+Eq.~(3.27) of that reference assigns $e^{q\phi}$ the corresponding
+$(-1)^q$ GSO parity for integer $q$.
+
+\subsection{Conventions for the BRST and PCO operators}
+\label{sec:brst-pco}
+
+In this subsection, $\Tmat$ denotes the stress tensor of the matter CFT and
+$\TF$ denotes the corresponding matter supercurrent.  Their free-field
+expressions for the ten-dimensional matter CFT are given in
+Eqs.~\eqref{eq:Tm-free-definition} and \eqref{eq:TF-free-definition} below.
+The holomorphic BRST current is defined by
+\begin{equation}
+\jB
+:=
+c\bigl(\Tmat+T_{\xi\eta}+T_\phi\bigr)
++bc\,\partial c
++\gamma\TF
+-\frac14\gamma^2b.
+\label{eq:brst-current}
+\end{equation}
+In bosonized variables, the composite field $\gamma^2$ is
+\begin{equation}
+\gamma^2 =\eta\,\partial\eta\,e^{2\phi}.
+\label{eq:gamma-squared}
+\end{equation}
+The BRST charge is the contour integral
+\begin{equation}
+\QB:=\oint\frac{\d z}{2\pi\i}\,\jB(z),
+\label{eq:brst-charge}
+\end{equation}
+where the contour is counterclockwise around the operator on which $\QB$
+acts.
+The anti-holomorphic charge $\widetilde Q_{\mathrm B}$ is defined by the
+tilded copy of Eqs.~\eqref{eq:brst-current}--\eqref{eq:brst-charge}; the
+closed-string BRST charge is
+\begin{equation}
+Q_{\mathrm{closed}}:=\QB+\widetilde Q_{\mathrm B}.
+\label{eq:closed-brst-charge}
+\end{equation}
+
+For two Grassmann-odd operators $A$ and $B$, write
+$\{A,B\}:=AB+BA$.  The holomorphic picture-changing operator (PCO) is
+defined in the large Hilbert space by
+\begin{align}
+\XPCO(z)
+&:=2\{\QB,\xi(z)\}
+\label{eq:pco-definition}
+\\
+&=2c\,\partial\xi
++2e^\phi\TF
+-\frac12\left[
+(\partial\eta)e^{2\phi}b
++\partial\bigl(\eta e^{2\phi}b\bigr)
+\right](z).
+\label{eq:pco-expanded}
+\end{align}
+The factor of two in Eq.~\eqref{eq:pco-definition} is part of the convention
+adopted from Ref.~\cite{Barman:2026qzi}.
+The PCO $\XPCO$ has conformal weight zero, ghost number zero, picture number
+$+1$, and is BRST closed.
+The anti-holomorphic PCO is
+\begin{equation}
+\widetilde\XPCO(\bar z)
+:=2\{\widetilde Q_{\mathrm B},\widetilde\xi(\bar z)\}.
+\label{eq:antiholomorphic-pco}
+\end{equation}
+
+For an oriented worldsheet of genus $g\in\mathbb{Z}_{\geq0}$ with
+$b\in\mathbb{Z}_{\geq0}$ boundary components, define $P_{\mathrm{tot}}$ to
+be the sum of the picture numbers of all holomorphic and anti-holomorphic
+insertions, including PCOs.  A nonzero correlator requires
+\begin{equation}
+P_{\mathrm{tot}}=2(2g+b-2).
+\label{eq:picture-balance}
+\end{equation}
+For a closed worldsheet, $b=0$, this condition can be imposed separately as
+$P_{\mathrm L}=P_{\mathrm R}=2g-2$.  Equation~\eqref{eq:picture-balance}
+explains why PCO insertions are required when the picture numbers of the
+vertex operators do not already have the required sum.
 
 \subsection{Conventions for the free boson}
 \label{sec:free-boson}
@@ -265,33 +562,9 @@ $\widetilde S^\alpha$ denote the spin fields that occur in the $-3/2$ picture;
 the placement of the spinor index is part of this convention and is fixed by
 the operator products below, rather than by an unstated index-raising rule.
 
-The Ramond operator products also contain the bosonized superghost $\phi$.
-The scalar $\phi$ is Grassmann even.  The symbol $e^{q\phi}$ denotes its
-exponential together with the cocycle factor, namely the $z$-independent
-factor that supplies the Grassmann parity required by the bosonization.  For
-integer $q$, we define
-\[
-\left|e^{q\phi}\right|:=q\pmod 2,
-\qquad q\in\mathbb Z.
-\]
-Thus $e^{q\phi}$ is Grassmann odd when $q$ is odd.  For half-integer $q$, a
-Grassmann parity is assigned only to the complete Ramond operator containing
-$e^{q\phi}$ and a spin field, rather than to $e^{q\phi}$ by itself.  For
-$q_1,q_2\in\tfrac12\mathbb Z$, the scalar and exponential operator products
-used below are
-\begin{equation}
-\begin{aligned}
-\partial\phi(z)\partial\phi(w)
-&\sim-\frac{1}{(z-w)^2},
-\\
-e^{q_1\phi}(z)e^{q_2\phi}(w)
-&\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
-\end{aligned}
-\label{eq:phi-provisional-definition}
-\end{equation}
-The complete $\beta\gamma$ bosonization is given in
-Sec.~\ref{sec:beta-gamma}.  We normalize the spin fields by the singular
-terms
+The Ramond operator products below use the scalar $\phi$ and the
+cocycle-dressed exponentials defined in Sec.~\ref{sec:beta-gamma}.  We
+normalize the spin fields by the singular terms
 \begin{align}
 e^{-\phi}\psi^M(z)\;e^{-\phi/2}S_\alpha(w)
 &\sim
@@ -317,296 +590,6 @@ Ref.~\cite{Alexandrov:2021dyl}.  The anti-holomorphic spin fields obey the
 same equations with every field and coordinate replaced by its
 anti-holomorphic counterpart.  This identical left-right form is another
 place where the type IIB chirality choice enters.
-
-\subsection{Conventions for the \texorpdfstring{$bc$}{bc} ghost system}
-\label{sec:bc-system}
-
-The reparametrization ghosts $b(z)$ and $c(z)$ are Grassmann odd.  Their
-holomorphic conformal weights and ghost numbers are
-\begin{center}
-\begin{tabular}{ccc}
-\toprule
-field & $h$ & ghost number \\
-\midrule
-$b$ & $2$ & $-1$ \\
-$c$ & $-1$ & $+1$ \\
-\bottomrule
-\end{tabular}
-\end{center}
-\medskip
-Their singular operator product is
-\begin{equation}
-b(z)c(w)\sim\frac{1}{z-w}.
-\label{eq:bc-data}
-\end{equation}
-The $bc$ stress tensor is defined by
-\begin{equation}
-T_{bc}:=-2b\partial c-(\partial b)c,
-\label{eq:Tbc-definition}
-\end{equation}
-and its central charge is
-\begin{equation}
-c_{bc}=-26.
-\label{eq:cbc}
-\end{equation}
-
-On the complex plane, a nonzero $bc$ correlator contains three more $c$
-insertions than $b$ insertions.  We define the
-constant $K$ by the normalization used in Ref.~\cite{Barman:2026qzi}:
-\begin{equation}
-\left\langle c(z_1)c(z_2)c(z_3)\right\rangle_{bc}
-:=-K(z_1-z_2)(z_2-z_3)(z_1-z_3).
-\label{eq:ccc-normalization}
-\end{equation}
-Here the subscript $bc$ means that the expectation value is taken only in
-the $bc$ sector.  Equation~\eqref{eq:ccc-normalization} defines $K$; its
-relation to a D-brane or D-instanton tension additionally depends on the
-normalization of the string amplitude and is not assumed in these notes.
-
-\subsection{Conventions for the \texorpdfstring{$\beta\gamma$}{beta-gamma} system}
-\label{sec:beta-gamma}
-
-The superconformal ghosts $\beta(z)$ and $\gamma(z)$ are Grassmann even and
-have conformal weights $3/2$ and $-1/2$, respectively.  We bosonize them in
-terms of Grassmann-odd fields $\xi,\eta$ and the Grassmann-even chiral scalar
-$\phi$ by
-\begin{align}
-\beta
-&:=\partial\xi\,e^{-\phi},
-\label{eq:beta-bosonization}
-\\
-\gamma
-&:=\eta\,e^{\phi}.
-\label{eq:gamma-bosonization}
-\end{align}
-The cocycle convention preceding Eq.~\eqref{eq:phi-provisional-definition}
-makes both $e^{-\phi}$ and $e^\phi$ Grassmann odd.  Consequently, each
-right-hand side in Eqs.~\eqref{eq:beta-bosonization} and
-\eqref{eq:gamma-bosonization} is Grassmann even.  The displayed factor order
-is part of the convention.  The elementary operator products are
-\begin{align}
-\xi(z)\eta(w)
-&\sim\frac{1}{z-w},
-\label{eq:xi-eta-ope}
-\\
-\partial\phi(z)\partial\phi(w)
-&\sim-\frac{1}{(z-w)^2},
-\label{eq:dphi-dphi-ope}
-\\
-e^{q_1\phi}(z)e^{q_2\phi}(w)
-&\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
-\label{eq:exp-phi-ope}
-\end{align}
-Graded locality and differentiation of Eq.~\eqref{eq:xi-eta-ope} give
-\begin{align*}
-\partial\xi(z)\eta(w)
-&\sim-\frac{1}{(z-w)^2},
-\\
-\eta(z)\partial\xi(w)
-&\sim\frac{1}{(z-w)^2}.
-\end{align*}
-Moving the odd exponential through the odd $\eta$ or $\partial\xi$ therefore
-gives
-\begin{align*}
-\beta(z)\gamma(w)
-&=\partial\xi(z)e^{-\phi}(z)\eta(w)e^\phi(w)
-\\
-&=-\partial\xi(z)\eta(w)e^{-\phi}(z)e^\phi(w)
-\sim\frac{1}{z-w},
-\\
-\gamma(z)\beta(w)
-&=\eta(z)e^\phi(z)\partial\xi(w)e^{-\phi}(w)
-\\
-&=-\eta(z)\partial\xi(w)e^\phi(z)e^{-\phi}(w)
-\sim-\frac{1}{z-w}.
-\end{align*}
-Thus
-\begin{equation}
-\begin{aligned}
-\beta(z)\gamma(w)
-&\sim\frac{1}{z-w},
-\\
-\gamma(z)\beta(w)
-&\sim-\frac{1}{z-w}.
-\end{aligned}
-\label{eq:beta-gamma-ope}
-\end{equation}
-
-The bosonized stress tensors are
-\begin{align}
-T_{\xi\eta}
-&:=-\eta\partial\xi,
-\label{eq:T-xi-eta}
-\\
-T_\phi
-&:=-\frac12(\partial\phi)^2-\partial^2\phi,
-\label{eq:T-phi}
-\\
-T_{\beta\gamma}
-&:=T_{\xi\eta}+T_\phi.
-\label{eq:T-beta-gamma}
-\end{align}
-In the unbosonized variables, the same stress tensor is
-\begin{equation}
-T_{\beta\gamma}
-=\frac32\beta\partial\gamma
-+\frac12\gamma\partial\beta.
-\label{eq:T-beta-gamma-unbosonized}
-\end{equation}
-Its central charge is
-\begin{equation}
-c_{\beta\gamma}=11.
-\label{eq:c-beta-gamma}
-\end{equation}
-
-The ghost number and picture number used below are additive charges defined
-on the elementary bosonized fields by the following table.
-\begin{center}
-\begin{tabular}{lccccc}
-\toprule
-field & $\beta$ & $\gamma$ & $\xi$ & $\eta$ & $e^{q\phi}$ \\
-\midrule
-ghost number & $-1$ & $+1$ & $-1$ & $+1$ & $0$ \\
-picture number & $0$ & $0$ & $+1$ & $-1$ & $q$ \\
-Grassmann parity & $0$ & $0$ & $1$ & $1$ & $q\bmod 2$ \\
-\bottomrule
-\end{tabular}
-\end{center}
-\medskip
-The last entry in the Grassmann-parity row applies to $q\in\mathbb Z$.  The
-conformal weight of the exponential, for $q\in\tfrac12\mathbb Z$, is
-\begin{equation}
-h\!\left[e^{q\phi}\right]
-=-\frac12q(q+2).
-\label{eq:phi-exponential-weight}
-\end{equation}
-The mode expansions of the weight-zero field $\xi$ and the weight-one field
-$\eta$ define
-\begin{equation}
-\xi_0:=\oint\frac{\d z}{2\pi\i z}\,\xi(z),
-\qquad
-\eta_0:=\oint\frac{\d z}{2\pi\i}\,\eta(z).
-\label{eq:xi-eta-zero-modes}
-\end{equation}
-The large Hilbert space is the state space on which $\xi_0$ acts without the
-restriction in Eq.~\eqref{eq:small-hilbert-space}.  The small Hilbert space is
-the subspace of states $|\Psi\rangle$ satisfying
-\begin{equation}
-\eta_0|\Psi\rangle=0.
-\label{eq:small-hilbert-space}
-\end{equation}
-Equations~\eqref{eq:beta-bosonization}--\eqref{eq:small-hilbert-space}
-follow the ordering, charges, and Hilbert-space convention of
-Ref.~\cite{Barman:2026qzi}.  The cocycle grading and the positive coefficients
-in Eq.~\eqref{eq:T-beta-gamma-unbosonized} agree with
-Eqs.~(3.17)--(3.20) of Ref.~\cite{Sen:2024review}; the parity discussion after
-Eq.~(3.27) of that reference assigns $e^{q\phi}$ the corresponding
-$(-1)^q$ GSO parity for integer $q$.
-
-\subsection{Conventions for the \texorpdfstring{$TT$ and $T_FT_F$}{TT and TF TF} operator products}
-\label{sec:super-virasoro}
-
-Let $T(z)$ be the stress tensor and $\TF(z)$ be its supercurrent in the normalization defined below,  and let $c$ be its central charge.
-We define the normalization of $T$ and $\TF$ by the singular operator products
-\begin{align}
-T(z)T(w)
-&\sim
-\frac{c/2}{(z-w)^4}
-+\frac{2T(w)}{(z-w)^2}
-+\frac{\partial T(w)}{z-w},
-\label{eq:TT-ope}
-\\
-T(z)\TF(w)
-&\sim
-\frac{3}{2}\,
-\frac{\TF(w)}{(z-w)^2}
-+\frac{\partial\TF(w)}{z-w},
-\label{eq:T-TF-ope}
-\\
-\TF(z)\TF(w)
-&\sim
-\frac{c/6}{(z-w)^3}
-+\frac{T(w)}{2(z-w)}.
-\label{eq:TF-TF-ope}
-\end{align}
-Equations~\eqref{eq:TT-ope}--\eqref{eq:TF-TF-ope} match the
-convention used in Ref.~\cite{Barman:2026qzi}.
-
-
-\subsection{Conventions for the BRST and PCO operators}
-\label{sec:brst-pco}
-\enlargethispage{2\baselineskip}
-
-The holomorphic BRST current is defined by
-\begin{equation}
-\jB
-:=
-c\bigl(\Tmat+T_{\xi\eta}+T_\phi\bigr)
-+bc\,\partial c
-+\gamma\TF
--\frac14\gamma^2b.
-\label{eq:brst-current}
-\end{equation}
-In bosonized variables, the composite field $\gamma^2$ is
-\begin{equation}
-\gamma^2 =\eta\,\partial\eta\,e^{2\phi}.
-\label{eq:gamma-squared}
-\end{equation}
-The BRST charge is the contour integral
-\begin{equation}
-\QB:=\oint\frac{\d z}{2\pi\i}\,\jB(z),
-\label{eq:brst-charge}
-\end{equation}
-where the contour is counterclockwise around the operator on which $\QB$
-acts.
-The anti-holomorphic charge $\widetilde Q_{\mathrm B}$ is defined by the
-tilded copy of Eqs.~\eqref{eq:brst-current}--\eqref{eq:brst-charge}; the
-closed-string BRST charge is
-\begin{equation}
-Q_{\mathrm{closed}}:=\QB+\widetilde Q_{\mathrm B}.
-\label{eq:closed-brst-charge}
-\end{equation}
-
-For two Grassmann-odd operators $A$ and $B$, write
-$\{A,B\}:=AB+BA$.  The holomorphic picture-changing operator (PCO) is
-defined in the large Hilbert space by
-\begin{align}
-\XPCO(z)
-&:=2\{\QB,\xi(z)\}
-\label{eq:pco-definition}
-\\
-&=2c\,\partial\xi
-+2e^\phi\TF
--\frac12\left[
-(\partial\eta)e^{2\phi}b
-+\partial\bigl(\eta e^{2\phi}b\bigr)
-\right](z).
-\label{eq:pco-expanded}
-\end{align}
-The factor of two in Eq.~\eqref{eq:pco-definition} is part of the convention
-adopted from Ref.~\cite{Barman:2026qzi}.
-The PCO $\XPCO$ has conformal weight zero, ghost number zero, picture number
-$+1$, and is BRST closed.
-The anti-holomorphic PCO is
-\begin{equation}
-\widetilde\XPCO(\bar z)
-:=2\{\widetilde Q_{\mathrm B},\widetilde\xi(\bar z)\}.
-\label{eq:antiholomorphic-pco}
-\end{equation}
-
-For an oriented worldsheet of genus $g\in\mathbb{Z}_{\geq0}$ with
-$b\in\mathbb{Z}_{\geq0}$ boundary components, define $P_{\mathrm{tot}}$ to
-be the sum of the picture numbers of all holomorphic and anti-holomorphic
-insertions, including PCOs.  A nonzero correlator requires
-\begin{equation}
-P_{\mathrm{tot}}=2(2g+b-2).
-\label{eq:picture-balance}
-\end{equation}
-For a closed worldsheet, $b=0$, this condition can be imposed separately as
-$P_{\mathrm L}=P_{\mathrm R}=2g-2$.  Equation~\eqref{eq:picture-balance}
-explains why PCO insertions are required when the picture numbers of the
-vertex operators do not already have the required sum.
-
 \begingroup
 \small
 \bibliographystyle{apsrev4-1long}
