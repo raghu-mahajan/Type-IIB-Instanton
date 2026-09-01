@@ -69,11 +69,14 @@ def render_article(
         flags=re.DOTALL,
     )
 
-    footer = '''<footer class="site-footer">
-  Generated from the LaTeX source with LaTeXML. Source conventions are linked in the bibliography.
-</footer>'''
-
-    html = html.replace("</body>", "</main>\n" + footer + "\n</body>", 1)
+    html = re.sub(
+        r'<footer class="ltx_page_footer">.*?</footer>',
+        "",
+        html,
+        count=1,
+        flags=re.DOTALL,
+    )
+    html = html.replace("</body>", "</main>\n</body>", 1)
     html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
     output_html.parent.mkdir(parents=True, exist_ok=True)
     output_html.write_text(html, encoding="utf-8")

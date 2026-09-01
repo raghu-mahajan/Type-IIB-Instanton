@@ -51,10 +51,8 @@
 \section{Worldsheet CFT conventions}
 \label{sec:worldsheet-conventions}
 
-Euclidean worldsheet coordinates
-are denoted by $z$ and $\bar z$.
-Target-space vector indices $M,N$ take values in
-$\{0,1,\ldots,9\}$.
+Euclidean worldsheet coordinates are denoted by $z$ and $\bar z$.
+Target-space vector indices $M,N$ take values in $\{0,1,\ldots,9\}$.
 We use the ten-dimensional Minkowski metric
 \begin{equation}
 \eta_{MN}:=\operatorname{diag}(-1,+1,\ldots,+1).
@@ -94,8 +92,8 @@ T(z)\cO_h(w)
 \end{equation}
 \item
 Let $T(z)$ be the stress tensor, let $\TF(z)$ be its supercurrent, and let
-$c$ be its central charge.  We define the normalization of these fields by
-the singular operator products
+$c$ be the central charge.
+We define the normalization of these operators by the following OPEs
 \begin{align}
 T(z)T(w)
 &\sim
@@ -120,17 +118,14 @@ T(z)\TF(w)
 Equations~\eqref{eq:TT-ope}--\eqref{eq:TF-TF-ope} match the convention used
 in Ref.~\cite{Barman:2026qzi}.
 \item
-A field of Grassmann parity
-$|A|\in\{0,1\}$ is called even when $|A|=0$ and odd when $|A|=1$; away from
-operator-product singularities, two such fields obey
-$AB=(-1)^{|A||B|}BA$.
+A Grassmann parity of an operator $A$ is denoted by $|A|\in\{0,1\}$.
 \end{enumerate}
 
 \subsection{Conventions for the \texorpdfstring{$bc$}{bc} ghost system}
 \label{sec:bc-system}
 
-The reparametrization ghosts $b(z)$ and $c(z)$ are Grassmann odd.  Their
-holomorphic conformal weights and ghost numbers are
+The reparametrization ghosts $b(z)$ and $c(z)$ are Grassmann odd.
+Their holomorphic conformal weights and ghost numbers are
 \begin{center}
 \begin{tabular}{ccc}
 \toprule
@@ -142,17 +137,17 @@ $c$ & $-1$ & $+1$ \\
 \end{tabular}
 \end{center}
 \medskip
-Their singular operator product is
+The $bc$ OPE is
 \begin{equation}
 b(z)c(w)\sim\frac{1}{z-w}.
 \label{eq:bc-data}
 \end{equation}
-The $bc$ stress tensor is defined by
+The $bc$ stress tensor is
 \begin{equation}
 T_{bc}:=-2b\partial c-(\partial b)c,
 \label{eq:Tbc-definition}
 \end{equation}
-and its central charge is
+and the central charge of the $bc$ system is
 \begin{equation}
 c_{bc}=-26.
 \label{eq:cbc}
@@ -167,9 +162,7 @@ constant $K$ by the normalization used in Ref.~\cite{Barman:2026qzi}:
 \label{eq:ccc-normalization}
 \end{equation}
 Here the subscript $bc$ means that the expectation value is taken only in
-the $bc$ sector.  Equation~\eqref{eq:ccc-normalization} defines $K$; its
-relation to a D-brane or D-instanton tension additionally depends on the
-normalization of the string amplitude and is not assumed in these notes.
+the $bc$ sector.
 
 \subsection{Conventions for the \texorpdfstring{$\beta\gamma$}{beta-gamma} system}
 \label{sec:beta-gamma}
@@ -216,7 +209,7 @@ e^{q_1\phi}(z)e^{q_2\phi}(w)
 &\sim(z-w)^{-q_1q_2}e^{(q_1+q_2)\phi}(w).
 \label{eq:exp-phi-ope}
 \end{align}
-Graded locality and differentiation of Eq.~\eqref{eq:xi-eta-ope} give
+Differentiation of Eq.~\eqref{eq:xi-eta-ope} gives
 \begin{align*}
 \partial\xi(z)\eta(w)
 &\sim-\frac{1}{(z-w)^2},
@@ -314,13 +307,6 @@ the subspace of states $|\Psi\rangle$ satisfying
 \eta_0|\Psi\rangle=0.
 \label{eq:small-hilbert-space}
 \end{equation}
-Equations~\eqref{eq:beta-bosonization}--\eqref{eq:small-hilbert-space}
-follow the ordering, charges, and Hilbert-space convention of
-Ref.~\cite{Barman:2026qzi}.  The cocycle grading and the positive coefficients
-in Eq.~\eqref{eq:T-beta-gamma-unbosonized} agree with
-Eqs.~(3.17)--(3.20) of Ref.~\cite{Sen:2024review}; the parity discussion after
-Eq.~(3.27) of that reference assigns $e^{q\phi}$ the corresponding
-$(-1)^q$ GSO parity for integer $q$.
 
 \subsection{Conventions for the BRST and PCO operators}
 \label{sec:brst-pco}
@@ -402,8 +388,8 @@ vertex operators do not already have the required sum.
 \subsection{Conventions for the free boson}
 \label{sec:free-boson}
 
-Let $X^M(z,\bar z)$ be the ten embedding coordinates.  Their two-point
-operator product and its differentiated holomorphic form are
+Let $X^M(z,\bar z)$ be the ten embedding coordinates.
+We have the following OPEs:
 \begin{align}
 X^M(z,\bar z)X^N(w,\bar w)
 &\sim
@@ -415,8 +401,7 @@ X^M(z,\bar z)X^N(w,\bar w)
 -\frac{\eta^{MN}}{2(z-w)^2}.
 \label{eq:dX-dX-ope}
 \end{align}
-Equation~\eqref{eq:dX-dX-ope} is the free-boson normalization used in
-Ref.~\cite{Barman:2026qzi}.  The holomorphic stress tensor of the ten bosons
+The holomorphic stress tensor of the ten bosons
 is defined by
 \begin{equation}
 T_X(z):=-\eta_{MN}\partial X^M\partial X^N(z).
@@ -487,7 +472,7 @@ central charge is
 c_\psi=5.
 \label{eq:cpsi}
 \end{equation}
-The free matter stress tensor and the matter supercurrent are defined by
+The total matter stress tensor and supercurrent are
 \begin{align}
 \Tmat
 &:=T_X+T_\psi
