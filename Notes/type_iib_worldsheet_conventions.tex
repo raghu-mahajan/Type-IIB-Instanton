@@ -48,30 +48,27 @@
 \tableofcontents
 \clearpage
 
-\section{Flat-space worldsheet conventions}
+\section{Worldsheet CFT conventions}
 \label{sec:worldsheet-conventions}
 
-On each worldsheet coordinate chart, the Euclidean worldsheet coordinates
+Euclidean worldsheet coordinates
 are denoted by $z$ and $\bar z$.
-Holomorphic fields depend on $z$, and anti-holomorphic fields depend on
-$\bar z$.  Target-space vector indices $M,N$ take values in
-$\{0,1,\ldots,9\}$.  Repeated target-space indices are summed over this set.
+Target-space vector indices $M,N$ take values in
+$\{0,1,\ldots,9\}$.
 We use the ten-dimensional Minkowski metric
 \begin{equation}
 \eta_{MN}:=\operatorname{diag}(-1,+1,\ldots,+1).
 \label{eq:minkowski-metric}
 \end{equation}
-Indices on target-space vectors are raised and lowered with
-$\eta_{MN}$ and its inverse $\eta^{MN}$.  We set
+We set
 \begin{equation}
 \alpha'=1.
 \label{eq:alpha-prime}
 \end{equation}
 
-For two holomorphic operators $A(z)$ and $B(w)$, the notation
-$A(z)B(w)\sim C(z,w)$ means that, in the expansion valid for $|z|>|w|$,
-$C(z,w)$ contains precisely the terms that are singular as $z\to w$.  Write
-$\operatorname{Sing}_{z\to w}[A(z)B(w)]$ for the sum of those singular terms.
+Some other general CFT$_2$ conventions we adopt are as follows:
+\begin{enumerate}
+\item
 Every coincident-point product in these notes is understood to be normal
 ordered by point splitting.  Thus the notation $A(w)B(w)$ means
 \begin{equation}
@@ -81,11 +78,12 @@ A(w)B(w)
 \left(A(z)B(w)-\operatorname{Sing}_{z\to w}[A(z)B(w)]\right).
 \label{eq:normal-ordering-definition}
 \end{equation}
-Normal-ordering colons are suppressed everywhere below.
+\item
 When a composite field is defined by an equation whose left-hand side is
 $C(z)$, every field on the right-hand side is evaluated at $z$ unless a
 different argument is displayed explicitly.
-If $T$ is a stress tensor, a holomorphic operator $\cO_h$ has conformal
+\item
+If $T$ is the stress tensor, a holomorphic operator $\cO_h$ has conformal
 weight $h$ when
 \begin{equation}
 T(z)\cO_h(w)
@@ -94,12 +92,15 @@ T(z)\cO_h(w)
 +\frac{\partial\cO_h(w)}{z-w}.
 \label{eq:conformal-weight-definition}
 \end{equation}
+\item
 The central charge $c$ of $T$ is defined so that the coefficient of
-$(z-w)^{-4}$ in $T(z)T(w)$ is $c/2$.  A field of Grassmann parity
+$(z-w)^{-4}$ in $T(z)T(w)$ is $c/2$.
+\item
+A field of Grassmann parity
 $|A|\in\{0,1\}$ is called even when $|A|=0$ and odd when $|A|=1$; away from
 operator-product singularities, two such fields obey
-$AB=(-1)^{|A||B|}BA$.  Derivatives without a bar mean
-$\partial:=\partial/\partial z$.
+$AB=(-1)^{|A||B|}BA$.
+\end{enumerate}
 
 \subsection{Conventions for the free boson}
 \label{sec:free-boson}
