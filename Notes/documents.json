@@ -1,5 +1,10 @@
 {
   "project_title": "Instantons in Type IIB String Theory",
+  "bibliography_style": {
+    "name": "apsrev4-1long",
+    "repository_file": "apsrev4-1long.bst",
+    "template_file": "/Users/rm89/Dropbox/RM_Latex_Template/apsrev4-1long.bst"
+  },
   "documents": [
     {
       "slug": "worldsheet-conventions",

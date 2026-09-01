@@ -460,110 +460,32 @@ Ref.~\cite{Barman:2026qzi}.
 \subsection{Conventions for the \texorpdfstring{$TT$ and $T_FT_F$}{TT and TF TF} operator products}
 \label{sec:super-virasoro}
 
-Let $T(z)$ be the stress tensor of a holomorphic matter superconformal field
-theory, let $\TF(z)$ be its supercurrent in the normalization defined below,
-and let $c_{\mathrm m}$ be its central charge.  We define the normalization
-of $T$ and $\TF$ by the singular operator products
+Let $T(z)$ be the stress tensor and $\TF(z)$ be its supercurrent in the normalization defined below,  and let $c$ be its central charge.
+We define the normalization of $T$ and $\TF$ by the singular operator products
 \begin{align}
 T(z)T(w)
 &\sim
-\frac{c_{\mathrm m}/2}{(z-w)^4}
+\frac{c/2}{(z-w)^4}
 +\frac{2T(w)}{(z-w)^2}
 +\frac{\partial T(w)}{z-w},
 \label{eq:TT-ope}
 \\
 T(z)\TF(w)
 &\sim
-\frac{3\TF(w)}{2(z-w)^2}
+\frac{3}{2}\,
+\frac{\TF(w)}{(z-w)^2}
 +\frac{\partial\TF(w)}{z-w},
 \label{eq:T-TF-ope}
 \\
 \TF(z)\TF(w)
 &\sim
-\frac{c_{\mathrm m}/6}{(z-w)^3}
+\frac{c/6}{(z-w)^3}
 +\frac{T(w)}{2(z-w)}.
 \label{eq:TF-TF-ope}
 \end{align}
-Thus $\TF$ is one half of a supercurrent $G$ normalized by
-$G(z)G(w)\sim(2c_{\mathrm m}/3)(z-w)^{-3}+2T(w)(z-w)^{-1}$.
-This explicit algebraic relation is the definition of the relative
-normalization; no separate meaning is assigned to the phrase ``normalized
-supercurrent.''  Equations~\eqref{eq:TT-ope}--\eqref{eq:TF-TF-ope} match the
+Equations~\eqref{eq:TT-ope}--\eqref{eq:TF-TF-ope} match the
 convention used in Ref.~\cite{Barman:2026qzi}.
 
-For the ten free bosons and ten free fermions of
-Secs.~\ref{sec:free-boson} and \ref{sec:free-fermion},
-\begin{equation}
-c_{\mathrm m}=c_X+c_\psi=15,
-\qquad
-T=\Tmat.
-\label{eq:critical-matter-central-charge}
-\end{equation}
-The operator products therefore become
-\begin{align}
-\Tmat(z)\Tmat(w)
-&\sim
-\frac{15/2}{(z-w)^4}
-+\frac{2\Tmat(w)}{(z-w)^2}
-+\frac{\partial\Tmat(w)}{z-w},
-\label{eq:critical-TT-ope}
-\\
-\Tmat(z)\TF(w)
-&\sim
-\frac{3\TF(w)}{2(z-w)^2}
-+\frac{\partial\TF(w)}{z-w},
-\label{eq:critical-T-TF-ope}
-\\
-\TF(z)\TF(w)
-&\sim
-\frac{5/2}{(z-w)^3}
-+\frac{\Tmat(w)}{2(z-w)}.
-\label{eq:critical-TF-TF-ope}
-\end{align}
-
-For completeness, the coefficients in Eq.~\eqref{eq:critical-TF-TF-ope}
-can be reproduced directly.  Substituting
-Eq.~\eqref{eq:TF-free-definition}, the double contraction of the two
-fermions and the two differentiated bosons gives
-\begin{equation}
-\left(-\frac{\eta^{MN}}{2(z-w)}\right)
-\left(-\frac{\eta_{MN}}{2(z-w)^2}\right)
-=\frac{10}{4(z-w)^3}
-=\frac{5}{2(z-w)^3}.
-\label{eq:TF-double-contraction}
-\end{equation}
-The single fermion contraction gives
-\begin{equation}
--\frac{1}{2(z-w)}\partial X^M\partial X_M(w)
-=\frac{T_X(w)}{2(z-w)}.
-\label{eq:TF-fermion-single-contraction}
-\end{equation}
-For the single boson contraction, expand
-$\psi^M(z)=\psi^M(w)+(z-w)\partial\psi^M(w)+\cO((z-w)^2)$.
-The zeroth-order product $\psi^M\psi_M$ vanishes, while the
-first-order term gives
-\begin{equation}
--\frac{1}{2(z-w)}(\partial\psi^M)\psi_M(w)
-=\frac{T_\psi(w)}{2(z-w)}.
-\label{eq:TF-boson-single-contraction}
-\end{equation}
-Adding Eqs.~\eqref{eq:TF-double-contraction}--\eqref{eq:TF-boson-single-contraction}
-gives Eq.~\eqref{eq:critical-TF-TF-ope} with
-$\Tmat=T_X+T_\psi$.
-
-The total holomorphic stress tensor of the gauge-fixed critical theory is
-\begin{equation}
-\Ttot:=\Tmat+T_{bc}+T_{\beta\gamma}.
-\label{eq:total-stress-tensor}
-\end{equation}
-Its central charge vanishes because
-\begin{equation}
-c_{\mathrm{tot}}
-=c_{\mathrm m}+c_{bc}+c_{\beta\gamma}
-=15-26+11
-=0.
-\label{eq:total-central-charge}
-\end{equation}
 
 \subsection{Conventions for the BRST and PCO operators}
 \label{sec:brst-pco}
@@ -581,8 +503,7 @@ c\bigl(\Tmat+T_{\xi\eta}+T_\phi\bigr)
 \end{equation}
 In bosonized variables, the composite field $\gamma^2$ is
 \begin{equation}
-\gamma^2:=\gamma\gamma
-=\eta\,\partial\eta\,e^{2\phi}.
+\gamma^2 =\eta\,\partial\eta\,e^{2\phi}.
 \label{eq:gamma-squared}
 \end{equation}
 The BRST charge is the contour integral
@@ -591,12 +512,7 @@ The BRST charge is the contour integral
 \label{eq:brst-charge}
 \end{equation}
 where the contour is counterclockwise around the operator on which $\QB$
-acts.  The balance $c_{\mathrm m}=15$ in
-Eq.~\eqref{eq:critical-matter-central-charge} implies
-\begin{equation}
-\QB^2=0.
-\label{eq:brst-nilpotence}
-\end{equation}
+acts.
 The anti-holomorphic charge $\widetilde Q_{\mathrm B}$ is defined by the
 tilded copy of Eqs.~\eqref{eq:brst-current}--\eqref{eq:brst-charge}; the
 closed-string BRST charge is
@@ -622,19 +538,9 @@ defined in the large Hilbert space by
 \label{eq:pco-expanded}
 \end{align}
 The factor of two in Eq.~\eqref{eq:pco-definition} is part of the convention
-adopted from Ref.~\cite{Barman:2026qzi}.  Define
-$X_{\mathrm{common}}:=\{\QB,\xi\}$ to be the PCO without this factor.  The
-two conventions obey
-\begin{equation}
-\XPCO=2X_{\mathrm{common}}.
-\label{eq:pco-convention-comparison}
-\end{equation}
+adopted from Ref.~\cite{Barman:2026qzi}.
 The PCO $\XPCO$ has conformal weight zero, ghost number zero, picture number
-$+1$, and is BRST closed:
-\begin{equation}
-[\QB,\XPCO(z)]=0.
-\label{eq:pco-brst-closed}
-\end{equation}
+$+1$, and is BRST closed.
 The anti-holomorphic PCO is
 \begin{equation}
 \widetilde\XPCO(\bar z)

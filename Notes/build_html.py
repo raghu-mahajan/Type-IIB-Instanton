@@ -74,5 +74,6 @@ def render_article(
 </footer>'''
 
     html = html.replace("</body>", "</main>\n" + footer + "\n</body>", 1)
+    html = "\n".join(line.rstrip() for line in html.splitlines()) + "\n"
     output_html.parent.mkdir(parents=True, exist_ok=True)
     output_html.write_text(html, encoding="utf-8")

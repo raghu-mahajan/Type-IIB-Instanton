@@ -20,3 +20,5 @@ sh Notes/build_site.sh
 The script reads `Notes/documents.json`, builds every listed source, converts each source with LaTeXML, publishes each article under `docs/<slug>/`, and regenerates the document catalog at `docs/index.html`.
 
 To publish another document, add its `.tex` source under `Notes/` and add one entry to `Notes/documents.json`.
+
+The bibliography style is the vendored `Notes/apsrev4-1long.bst` from `/Users/rm89/Dropbox/RM_Latex_Template`. When that template file is available, the build refreshes the repository copy from it. BibTeX generates the `.bbl` used by both the PDF and the HTML article so that both formats share the same reference style.

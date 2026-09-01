@@ -3,6 +3,7 @@ from __future__ import annotations
 from html import escape
 import json
 from pathlib import Path
+import re
 import shutil
 import stat
 import subprocess
@@ -33,6 +34,7 @@ def load_manifest() -> dict:
     if not documents:
         raise ValueError("documents.json must contain at least one document")
 
+    bibliography_style = manifest["bibliography_style"]["name"]
     slugs: set[str] = set()
     for document in documents:
         slug = document["slug"]
@@ -50,8 +52,67 @@ def load_manifest() -> dict:
         source = NOTES_DIR / document["source"]
         if not source.is_file():
             raise FileNotFoundError(f"Document source does not exist: {source}")
+        source_text = source.read_text(encoding="utf-8")
+        expected_style_command = f"\\bibliographystyle{{{bibliography_style}}}"
+        if "\\bibliography{" in source_text and expected_style_command not in source_text:
+            raise ValueError(
+                f"{source.name} must use \\bibliographystyle{{{bibliography_style}}}"
+            )
 
     return manifest
+
+
+def sync_bibliography_style(manifest: dict) -> None:
+    style = manifest["bibliography_style"]
+    template_file = Path(style["template_file"])
+    repository_file = NOTES_DIR / style["repository_file"]
+
+    if template_file.is_file():
+        shutil.copyfile(template_file, repository_file)
+        repository_file.chmod(0o644)
+    elif not repository_file.is_file():
+        raise FileNotFoundError(
+            "The bibliography style is missing from both the LaTeX template "
+            f"and the repository: {style['name']}"
+        )
+
+
+def remove_loose_build_artifacts(source: Path) -> None:
+    for suffix in (
+        ".aux",
+        ".bbl",
+        ".blg",
+        ".fdb_latexmk",
+        ".fls",
+        ".log",
+        ".out",
+        ".pdf",
+        ".synctex.gz",
+        ".toc",
+        ".xml",
+        ".latexml.log",
+        ".latexmlpost.log",
+    ):
+        (source.parent / f"{source.stem}{suffix}").unlink(missing_ok=True)
+
+
+def prepare_html_source(source: Path, built_bbl: Path, build_dir: Path) -> Path:
+    source_text = source.read_text(encoding="utf-8")
+    bibliography_commands = re.compile(
+        r"\\bibliographystyle\{[^}]+\}\s*\\bibliography\{[^}]+\}"
+    )
+    if not bibliography_commands.search(source_text):
+        return source
+
+    html_source = build_dir / f"{source.stem}_html.tex"
+    bbl_input = f"\\input{{{built_bbl.name}}}"
+    html_source.write_text(
+        bibliography_commands.sub(
+            lambda _match: bbl_input, source_text, count=1
+        ),
+        encoding="utf-8",
+    )
+    return html_source
 
 
 def copy_shared_assets() -> None:
@@ -74,10 +135,12 @@ def build_document(document: dict) -> None:
 
     source_stem = source.stem
     built_pdf = document_build_dir / f"{source_stem}.pdf"
+    built_bbl = document_build_dir / f"{source_stem}.bbl"
     built_xml = document_build_dir / f"{source_stem}.xml"
     built_html = document_build_dir / f"{source_stem}.html"
     published_pdf_name = document.get("pdf", f"{slug}.pdf")
 
+    remove_loose_build_artifacts(source)
     run(
         [
             "latexmk",
@@ -89,9 +152,15 @@ def build_document(document: dict) -> None:
         ],
         cwd=source.parent,
     )
+    html_source = prepare_html_source(source, built_bbl, document_build_dir)
     run(
-        ["latexml", f"--dest={built_xml}", source.name],
-        cwd=source.parent,
+        [
+            "latexml",
+            f"--path={source.parent}",
+            f"--dest={built_xml}",
+            html_source.name,
+        ],
+        cwd=html_source.parent,
     )
     run(
         [
@@ -101,7 +170,7 @@ def build_document(document: dict) -> None:
             "--navigationtoc=context",
             str(built_xml),
         ],
-        cwd=source.parent,
+        cwd=html_source.parent,
     )
 
     render_article(
@@ -113,6 +182,7 @@ def build_document(document: dict) -> None:
     shutil.copy2(built_pdf, document_output_dir / published_pdf_name)
     PDF_DIR.mkdir(parents=True, exist_ok=True)
     shutil.copy2(built_pdf, PDF_DIR / published_pdf_name)
+    remove_loose_build_artifacts(source)
 
 
 def render_catalog(manifest: dict) -> None:
@@ -177,6 +247,7 @@ def remove_legacy_public_files() -> None:
 
 def main() -> None:
     manifest = load_manifest()
+    sync_bibliography_style(manifest)
     copy_shared_assets()
     for document in manifest["documents"]:
         build_document(document)
