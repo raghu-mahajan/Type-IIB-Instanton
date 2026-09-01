@@ -9,10 +9,12 @@ SOURCE_HTML = NOTES_DIR / "build" / "type_iib_worldsheet_conventions.html"
 OUTPUT_DIR = REPOSITORY_DIR / "docs"
 OUTPUT_HTML = OUTPUT_DIR / "index.html"
 SITE_CSS = OUTPUT_DIR / "assets" / "site.css"
+SITE_JS = OUTPUT_DIR / "assets" / "site.js"
 
 
 html = SOURCE_HTML.read_text(encoding="utf-8")
 site_css_version = hashlib.sha256(SITE_CSS.read_bytes()).hexdigest()[:12]
+site_js_version = hashlib.sha256(SITE_JS.read_bytes()).hexdigest()[:12]
 
 html = html.replace(
     '<link rel="stylesheet" href="LaTeXML.css" type="text/css">\n'
@@ -31,6 +33,7 @@ html = html.replace(
 html = html.replace(
     "</head>",
     '<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>\n'
+    f'<script defer src="assets/site.js?v={site_js_version}"></script>\n'
     "</head>",
     1,
 )

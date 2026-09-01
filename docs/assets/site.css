@@ -9,6 +9,7 @@
   --rail: #f4f1ef;
   --link: #243fbb;
   --accent: #c78732;
+  --active: #f2c98f;
   --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --serif: "Computer Modern Serif", "Latin Modern Roman", "Times New Roman", serif;
 }
@@ -70,6 +71,10 @@ a {
   margin: 0;
 }
 
+.contents-rail .ltx_tocentry_section {
+  position: relative;
+}
+
 .contents-rail .ltx_ref {
   display: block;
   padding: 5px 7px;
@@ -82,6 +87,7 @@ a {
 }
 
 .contents-rail .ltx_tocentry_section > .ltx_ref {
+  padding-right: 34px;
   font-weight: 720;
 }
 
@@ -93,6 +99,57 @@ a {
 .contents-rail .ltx_ref:focus-visible {
   background: rgba(255, 255, 255, 0.72);
   color: #111;
+}
+
+.contents-rail .ltx_ref.is-current-parent {
+  color: #111;
+  font-weight: 720;
+}
+
+.contents-rail .ltx_ref.is-active,
+.contents-rail .ltx_ref.is-active:hover,
+.contents-rail .ltx_ref.is-active:focus-visible {
+  background: var(--active);
+  color: #2f2518;
+  font-weight: 720;
+}
+
+.contents-rail .ltx_toclist_section[hidden] {
+  display: none;
+}
+
+.contents-toggle {
+  position: absolute;
+  z-index: 2;
+  top: 2px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  color: #77736e;
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.contents-toggle:hover,
+.contents-toggle:focus-visible {
+  color: #222;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.contents-toggle span {
+  display: block;
+  transform: translateY(-1px);
+  transition: transform 160ms ease;
+}
+
+.contents-toggle[aria-expanded="true"] span {
+  transform: translateY(-1px) rotate(90deg);
 }
 
 .article-shell {
@@ -275,6 +332,76 @@ a {
 .ltx_tag_equation {
   padding-left: 18px;
   white-space: nowrap;
+}
+
+.preview-trigger {
+  cursor: help;
+}
+
+.ltx_tag_equation.preview-trigger {
+  border-radius: 3px;
+  outline-offset: 3px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-style: dotted;
+  text-underline-offset: 0.18em;
+}
+
+.ltx_tag_equation.preview-trigger:hover,
+.ltx_tag_equation.preview-trigger:focus-visible {
+  color: var(--link);
+  text-decoration-color: currentColor;
+}
+
+.preview-popover {
+  position: fixed;
+  z-index: 1000;
+  width: min(520px, calc(100vw - 32px));
+  max-height: min(360px, calc(100vh - 32px));
+  overflow: auto;
+  padding: 14px 16px;
+  border: 1px solid #ded9d4;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #f5f2ef;
+  box-shadow: 0 12px 32px rgba(35, 29, 23, 0.16);
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+.preview-popover[hidden] {
+  display: none;
+}
+
+.preview-popover .ltx_equation,
+.preview-popover .ltx_equationgroup,
+.preview-popover .ltx_eqn_table {
+  display: table;
+  width: 100%;
+  margin: 0 !important;
+  overflow: visible;
+  padding: 0;
+}
+
+.preview-popover .ltx_eqn_table > tbody {
+  display: table-row-group;
+  width: auto;
+}
+
+.preview-popover .ltx_biblist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.preview-popover .ltx_bibitem {
+  margin: 0;
+  padding: 0;
+}
+
+.preview-popover .ltx_bib_key {
+  margin-right: 0.25em;
 }
 
 .ltx_bibliography {
